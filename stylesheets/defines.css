@@ -1,0 +1,6 @@
+:root {
+    --desktop-width: 1439px;
+    --tablet-landscape-width: 1024px;
+    --phone-landscape-width: 768px;
+    --phone-portrait-width: 480px;
+}

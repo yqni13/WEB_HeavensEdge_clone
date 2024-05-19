@@ -1,0 +1,73 @@
+@import "./stylesheets/colors.css";
+@import "./stylesheets/defines.css";
+@import "./stylesheets/icons.css";
+@import "./stylesheets/media.css";
+
+* {
+    font-family: system-ui;
+}
+
+html, body {
+    height: 100%;
+    scrollbar-width: none;
+    margin: 0;
+    background-image: var(--gradient-torquoisewhite);
+}
+
+i {
+    width: 30px;
+    height: auto;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: end; 
+    padding: 0 25px;
+    /* margin: 0 auto;
+    width: 100%; */
+
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: solid rgba(255, 255, 255, 0.3) 2px;
+    backdrop-filter: blur(5px);
+
+    .logo {
+        display: flex;
+        margin-right: auto;
+    }
+    img {
+        width: 100px;
+        height: auto;
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        padding-right: 100px;
+
+        li {
+            padding: 0 20px;
+            a {
+                font-size: 22px;
+                text-decoration: none;
+                color: var(--theme-grey);
+                font-weight: bold;
+            }
+        }
+    }
+
+    .burger-menu {
+        display: flex;
+        color: var(--theme-grey);
+    }
+
+    
+}
