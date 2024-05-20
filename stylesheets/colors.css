@@ -78,12 +78,17 @@
     --bordeau-red: #420116;
     --tangerine-yellow: #f3b20e;
     --acting-grey: #7e7e7e;
-    --highlight-grey: rgba(128, 128, 128, 0.4);
+    --highlight-grey: rgba(128, 128, 128, 0.7);
     --tyrian-purple: #33002A;
+    --logo-gold: #FBBB1E;
+    --hotel-footer: #0C2645;
+    --hotel-text: #4D7BA9;
 
     /* BACKGROUND-IMAGE LINEAR-GRADIENT */
     --yqni13-gradient: linear-gradient(167deg, #650D88 42%, #BC0C79 90%);
     --gradient-torquoisewhite: linear-gradient(54deg, #f0f8ff 0%, 62%, #00adb5 100%);
+    --gradient-grey: conic-gradient(from 0deg at 0% 0%,#f0f8ff 0%, 25%, #7E7E7E 47% 0%);
+    --gradient-footer: linear-gradient(to top right, #f0f8ff 0%, 71%, #4d7ba9 100%);
         
     /* filter to change color of png */
     /* white --alice-blue */

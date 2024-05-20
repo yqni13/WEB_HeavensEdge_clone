@@ -2,6 +2,7 @@
 @import "./stylesheets/defines.css";
 @import "./stylesheets/icons.css";
 @import "./stylesheets/media.css";
+@import "./stylesheets/footer.css";
 
 * {
     font-family: system-ui;
@@ -28,13 +29,12 @@ ul {
 }
 
 .nav-bar {
+    position: fixed;
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: end; 
-    padding: 0 25px;
-    /* margin: 0 auto;
-    width: 100%; */
-
     background: rgba(255, 255, 255, 0.04);
     border-bottom: solid rgba(255, 255, 255, 0.3) 2px;
     backdrop-filter: blur(5px);
@@ -44,8 +44,10 @@ ul {
         margin-right: auto;
     }
     img {
-        width: 100px;
+        width: 150px;
         height: auto;
+        padding: 25px 0;
+        margin-left: 50px;
     }
     
     ul {
@@ -56,18 +58,53 @@ ul {
         li {
             padding: 0 20px;
             a {
-                font-size: 22px;
+                font-size: 18px;
+                text-transform: uppercase;
                 text-decoration: none;
-                color: var(--theme-grey);
+                color: var(--hotel-text);
+                text-shadow: 4px 4px 20px var(--hotel-text);
+                background: transparent;
                 font-weight: bold;
+
+                /* background: var(--gradient-grey);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; */
             }
         }
     }
 
     .burger-menu {
         display: flex;
-        color: var(--theme-grey);
-    }
-
-    
+        color: var(--logo-gold);
+        margin-right: 50px;
+    }    
 }
+
+.box1 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/parallax/img1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box2 {
+    min-height: 50vh;
+    width: 100%;
+    background: transparent;
+}
+
+.box3 {
+    background-image: url(./assets/parallax/img3.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: inherit;
+}
+
+
