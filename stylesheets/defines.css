@@ -4,3 +4,19 @@
     --phone-landscape-width: 768px;
     --phone-portrait-width: 480px;
 }
+
+/* google fonts imports */
+.dancing-script-googlefonts {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.jost-googlefonts {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
