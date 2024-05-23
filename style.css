@@ -33,6 +33,7 @@ h2 {
 h3 {
     /* example: Heaven's Edge Boutique Hotel */
     font-size: 17px;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -179,13 +180,10 @@ p {
     /* min-height: 50vh; */
     padding: 100px 0 25px 0;
     width: 100%;
-    background: var(--alice-blue);
+    background: var(--gradient-bluewhite);
     display: inline-block;
     align-content: center;
     text-align: -webkit-center;
-    h3 {
-        text-transform: uppercase;
-    }
     .wrapper_box2 {
         width: 30%;
         text-align: center;
@@ -237,15 +235,98 @@ p {
     width: 100%;
     padding: 50px 0px;
     text-align: -webkit-center;
-    .wrapper_box5 {
-        width:60%;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    
     .box5_part {
-        padding: 25px 0;
-        border-bottom: solid var(--highlight-grey) 1px;
+        padding: 50px 0;
+    }
+    .box5_separator_single {
+        width: 40%;
+        border-bottom: solid var(--highlight-grey) 2px;
+    }
+    .box5_separator_double {
+        margin: 0 100px;
+        border-bottom: solid var(--highlight-grey) 2px;
+    }
+    #box5_part1 {
+        width: 40%;
+    }
+    #box5_part2,
+    #box5_part3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box5_part2_text {
+        width: 50%;
+        .wrapper_box5_part2_text {
+            margin: 0 100px;
+        }
+    }
+    .box5_part2_img {
+        width: 50%;
+        align-content: center;
+        .wrapper_box5_part2_img {
+            margin: 0 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .box5_part3_img {
+        width: 50%;
+        align-content: center;
+        .wrapper_box5_part3_img {
+            margin: 0 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .box5_part3_text {
+        width: 50%;
+        align-content: center;
+        .wrapper_box5_part3_text {
+            margin: 0 100px;
+        }
     }
 }
 
+.box6 {
+    padding-top: 50px;
+    width: 100%;
+    background-color: var(--alice-blue);
+    .box6_text {
+        text-align: center;
+    }
+    .box6_gallery {
+        .wrapper_box6_gallery {
+            display: flex;
+            flex-wrap: wrap;
+            .wrapper_box6_img {
+                width: calc((100vw / 5) - 4px);
+                margin: 2px;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                &:hover {
+                    animation-name: darken-gallery;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+}
+
+@keyframes darken-gallery {
+    from {filter: brightness(1)}
+    to {filter: brightness(0.6)}
+}
 
 @keyframes autoplay1 {
     0% { visibility: visible }

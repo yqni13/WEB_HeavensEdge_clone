@@ -89,7 +89,8 @@
     --gradient-torquoisewhite: linear-gradient(54deg, #f0f8ff 0%, 62%, #00adb5 100%);
     --gradient-grey: conic-gradient(from 0deg at 0% 0%,#f0f8ff 0%, 25%, #7E7E7E 47% 0%);
     --gradient-footer: linear-gradient(to top right, #f0f8ff 0%, 71%, #4d7ba9 100%);
-        
+    --gradient-bluewhite: linear-gradient(to bottom, #3b788e 0%, 47%, #f0f8ff 100%);
+
     /* filter to change color of png */
     /* white --alice-blue */
     --signature-aliceblue: invert(100%) sepia(59%) saturate(5190%) hue-rotate(179deg) brightness(107%) contrast(107%);
