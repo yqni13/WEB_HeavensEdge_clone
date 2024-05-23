@@ -1,5 +1,5 @@
 
-// var projectJSONData = require("./data/content.json");
+var projectJSONData = require("./data/content.json");
 // var projectData;
 var sliderIndex = 0;
 var box3Images = [
