@@ -1,0 +1,19 @@
+@media screen and (min-width: var(--desktop-width)) {
+
+} 
+
+@media screen and (max-width: var(--desktop-width)) {
+
+}
+
+@media screen and (max-width: var(--tablet-landscape-width)) {
+
+}
+
+@media screen and (max-width: var(--phone-landscape-width)) {
+
+}
+
+@media screen and (max-width: var(--phone-portrait-width)) {
+    
+}
