@@ -133,10 +133,6 @@ p {
                 text-shadow: 4px 4px 20px var(--hotel-text);
                 background: transparent;
                 font-weight: bold;
-
-                /* background: var(--gradient-grey);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent; */
             }
         }
     }
@@ -177,13 +173,13 @@ p {
 
 
 .box2 {
-    /* min-height: 50vh; */
     padding: 100px 0 25px 0;
     width: 100%;
     background: var(--gradient-bluewhite);
     display: inline-block;
     align-content: center;
     text-align: -webkit-center;
+    text-align: -moz-center;
     .wrapper_box2 {
         width: 30%;
         text-align: center;
@@ -202,6 +198,7 @@ p {
 
     .wrapper_box3_text {
         text-align: -webkit-center;
+        text-align: -moz-center;
         width: 30%;
         margin: 50px 100px 50px 50px;
         p {
@@ -235,6 +232,7 @@ p {
     width: 100%;
     padding: 50px 0px;
     text-align: -webkit-center;
+    text-align: -moz-center;
     display: flex;
     flex-wrap: wrap;
     

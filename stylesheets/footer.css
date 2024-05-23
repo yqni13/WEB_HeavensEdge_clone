@@ -4,10 +4,6 @@ footer {
     background: var(--hotel-footer);
     justify-content: center;
 
-    h3 {
-        
-    }
-
     .wrapper_footer {
         display: flex;
         padding: 50px;
@@ -86,8 +82,8 @@ footer {
                 align-content: center;
                 position: relative;
                 text-align: -webkit-right;
+                text-align: -moz-right;
                 form {
-                    /* width: 90%; */
                     height: 75%;
                     input {
                         width: calc(100% - 36px);
@@ -106,26 +102,26 @@ footer {
                         width: 50%;
                         float: right;
                     }
-                   
                     textarea {
                         width: calc(100% - 36px);
                         height: 40%;
                         padding: 8px 16px;
                         margin: 2px;
                         background-image: var(--gradient-footer);
+                        border: none;
                         &:focus-visible {
                             border: none;
                             /* TODO: loose border when clicked in */
                         }
                     }
                     button {
-                        /* width:25%; */
                         float: left;
                         padding: 6px 20px;
                         color: var(--alice-blue);
                         background-color: var(--logo-gold);
                         text-transform: uppercase;
                         margin: 0 2px;
+                        border: none;
                     }
                 }
             }
