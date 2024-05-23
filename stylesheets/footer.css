@@ -1,0 +1,130 @@
+footer {
+    display: flex;
+    width: 100%;
+    background: var(--hotel-footer);
+    justify-content: center;
+
+    .wrapper_footer {
+        display: flex;
+        padding: 50px;
+        .links {
+            display: flex;
+            flex-wrap:wrap;
+            width:55%;
+            div {
+                width: 30%;
+                margin: 0 1.5%;
+            }
+            
+            ul {
+                list-style: none;
+            }
+            li {
+                padding: 5px 0;
+            }
+            a {
+                color: var(--alice-blue);
+                text-decoration: none;
+            }
+            p {
+                width: 100%;
+                text-align: end;
+                text-transform: uppercase;
+                color: var(--highlight-grey);
+                padding-top: 15px;
+                margin: 100px 0 15px 0;
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-top-color: var(--highlight-grey);
+            }
+            #copyright {
+                width: 15px;
+                height: 12px;
+            }
+        }
+        .contact {
+            width:45%;
+            display: flex;
+            flex-wrap: wrap;
+            .contact_us {
+                width: 100%;
+            }
+            h5 {
+                text-align: center;
+            }            
+            .wrapper_contact {
+                display: flex;
+                margin-top: 15px;
+            }
+            .contact_data {
+                margin-left: 50px;
+                width: 40%;
+                .contact_details {
+                    margin: 25px 0;
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        color: var(--logo-gold);
+                        font-size: 14px;
+                    }
+    
+                    i {
+                        float:left;
+                        width: 35px;
+                        height: 35px;
+                        color: var(--alice-blue);
+                        margin: 5px 15px 5px 0;
+                    }
+                }
+            }
+            .contact_msg {
+                width:60%;
+                align-content: center;
+                position: relative;
+                text-align: -webkit-right;
+                text-align: -moz-right;
+                form {
+                    height: 75%;
+                    input {
+                        width: calc(100% - 36px);
+                        padding-block: 0;
+                        padding-inline: 0;
+                        padding: 8px 16px;
+                        margin: 2px;
+                        border: none;
+                        background-image: var(--gradient-footer);
+                    }
+                    .uneven {
+                        width: 50%;
+                        float: left;
+                    }
+                    .even {
+                        width: 50%;
+                        float: right;
+                    }
+                    textarea {
+                        width: calc(100% - 36px);
+                        height: 40%;
+                        padding: 8px 16px;
+                        margin: 2px;
+                        background-image: var(--gradient-footer);
+                        border: none;
+                        &:focus-visible {
+                            border: none;
+                            /* TODO: loose border when clicked in */
+                        }
+                    }
+                    button {
+                        float: left;
+                        padding: 6px 20px;
+                        color: var(--alice-blue);
+                        background-color: var(--logo-gold);
+                        text-transform: uppercase;
+                        margin: 0 2px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
