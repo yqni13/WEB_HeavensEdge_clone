@@ -117,26 +117,25 @@ p {
         padding: 25px 0;
         margin-left: 50px;
     }
-    
     ul {
         display: flex;
         list-style: none;
         padding-right: 100px;
-
+    
         li {
             padding: 0 20px;
-            a {
-                font-size: 18px;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: var(--hotel-text);
-                text-shadow: 4px 4px 20px var(--hotel-text);
-                background: transparent;
-                font-weight: bold;
-            }
+        }
+        a {
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--hotel-text);
+            text-shadow: 4px 4px 20px var(--hotel-text);
+            background: transparent;
+            font-weight: bold;
         }
     }
-
+    
     .burger-menu {
         display: flex;
         color: var(--logo-gold);
