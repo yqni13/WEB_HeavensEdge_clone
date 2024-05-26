@@ -83,11 +83,12 @@ p {
 }
 
 .details-btn {
+    text-decoration: none;
     background-color: var(--logo-gold);
     color: var(--rich-black);
-    padding: 6px 20px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 2.5px;
     margin: 16px 0;
     font-size: 12px;
     cursor: pointer;
@@ -96,9 +97,6 @@ p {
         color: var(--logo-gold);
     }
 }
-
-
-
 
 .box1 {
     justify-content: center;
@@ -277,10 +275,7 @@ p {
     }
 }
 
-@keyframes darken-gallery {
-    from {filter: brightness(1)}
-    to {filter: brightness(0.6)}
-}
+
 
 @keyframes autoplay1 {
     0% { visibility: visible }

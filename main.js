@@ -12,6 +12,10 @@ var currentFile = '';
 initProject();
 
 function initProject() {
+    // var widthRequestSlowedDown = $.debounce(300, () => {
+    //     this.setNavWidthDynamically(window.screen.width);
+    // })
+    // window.addEventListener("resize", widthRequestSlowedDown, false);
     currentFile = getCurrentFile();
     loadNavBar();
     loadFooter();
@@ -260,3 +264,29 @@ function loadFooter() {
     footer.append(wrapperBase);
 }
 
+// TODO: responsive navbar (example portfolio project)
+// function setNavWidthDynamically(width) {
+//     // sets data attribute for body and in media.scss style settings are applied
+
+//     if(width > 768) {
+//         document.body.setAttribute("data-nav", 'navDesktop');
+//     } else {
+//         document.body.setAttribute("data-nav", 'navMobileCollapsed');
+//     }
+// }
+
+// function expandNavMobile(closeAfterRouting = false) {
+//     const screenWidth = window.screen.width;
+//     if(screenWidth <= 768 && closeAfterRouting)  this.mobileNavExpended = true;
+//     if(screenWidth > 768 && !closeAfterRouting) return;
+
+//     if(screenWidth <= 768) {
+//         if(this.mobileNavExpended) {
+//             document.body.setAttribute("data-nav", 'navMobileCollapsed')
+//             this.mobileNavExpended = false;
+//         } else {
+//             document.body.setAttribute("data-nav", 'navMobileExtended')
+//             this.mobileNavExpended = true;
+//         }
+//     }
+// }

@@ -40,7 +40,7 @@
     }
     
     .burger-menu {
-        display: flex;
+        display: none;
         color: var(--logo-gold);
         margin-right: 50px;
     }    
