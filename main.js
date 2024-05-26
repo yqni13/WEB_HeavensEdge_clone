@@ -27,13 +27,13 @@ function carouselBox3() {
 }
 
 function loadNavBar() {
-    const navbar = document.getElementById("nav-bar-target");
+    const navbar = document.getElementById("nav_bar_target");
     const menuElements = {
         "Home": "index.html",
         "About": "about.html",
         "Suites & Villas": "suites_and_villas.html",
         "Experience": "experience.html",
-        "Gallery": "gallery.html"
+        "Booking": "https://heavensedge.reserve-online.net/"
     }
 
     let logo_element = document.createElement('a');
@@ -52,9 +52,14 @@ function loadNavBar() {
     Object.entries(menuElements).forEach(([key, value]) => {
         let li_element = document.createElement('li');
         let a_element = document.createElement('a');
-        key === 'Home' 
-            ? a_element.href = `./${value}`
-            : a_element.href = `./components/${value}`;
+        if (key === 'Home') {
+            a_element.href = `./${value}`;
+        } else if (key === 'Booking') {
+            a_element.href = value;
+            a_element.target = "_blank";
+        } else {
+            a_element.href = `./components/${value}`;
+        }
         a_element.innerHTML = key;
         li_element.appendChild(a_element);
         ul_element.appendChild(li_element);
@@ -72,7 +77,7 @@ function loadNavBar() {
 function loadFooter() {
     const linksElements = {
         "Resort Information": {
-            "About": "./components/about.html",
+            "Gallery": "./components/gallery.html",
             "Location": "./components/location.html"
         },
         "Terms & Conditions": {
