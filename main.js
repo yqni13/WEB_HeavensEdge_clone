@@ -29,7 +29,7 @@ function carouselBox3() {
     
     image.style.backgroundImage = "url(" + locationReference + box3Images[sliderIndex] + ")";
     sliderIndex++;
-    setTimeout(carouselBox3, 5000);
+    setTimeout(carouselBox3, 3500);
 }
 
 function getCurrentFile() {
@@ -41,9 +41,9 @@ function loadNavBar() {
     const navbar = document.getElementById("nav_bar_target");
     const menuElements = {
         "Home": "index.html",
-        "About": "about.html",
-        "Suites & Villas": "suites_and_villas.html",
-        "Experience": "experience.html",
+        "About": "nav_about.html",
+        "Suites & Villas": "nav_suites-and-villas.html",
+        "Experience": "nav_experience.html",
         "Booking": "https://heavensedge.reserve-online.net/"
     }
 
@@ -94,18 +94,18 @@ function loadFooter() {
     currentFile === 'index.html' ? locationReference = './components/' : locationReference = './';
     const linksElements = {
         "Resort Information": {
-            "Gallery": "gallery.html",
-            "Location": "location.html"
+            "Gallery": "footer_gallery.html",
+            "Location": "footer_location.html"
         },
         "Terms & Conditions": {
             "Booking": "https://heavensedge.reserve-online.net/",
-            "Privacy Policy": "policy.html",
-            "Terms of use": "terms.html"
+            "Privacy Policy": "footer_policy.html",
+            "Terms of use": "footer_terms.html"
         },
         
         "Heavens Edge": {
-            "Newsletter": "newsletter.html",
-            "Reviews": "reviews.html"
+            "Newsletter": "footer_newsletter.html",
+            "Reviews": "footer_reviews.html"
         }
     }
     const contactElements = {

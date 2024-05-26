@@ -7,7 +7,7 @@
     justify-content: end; 
     background: rgba(255, 255, 255, 0.04);
     border-bottom: solid rgba(255, 255, 255, 0.3) 2px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 
     .logo {
         display: flex;
@@ -31,7 +31,8 @@
             font-size: 18px;
             text-transform: uppercase;
             text-decoration: none;
-            color: var(--hotel-text);
+            color: var(--rich-black);
+            /* color: var(--hotel-text); */
             text-shadow: 4px 4px 20px var(--hotel-text);
             background: transparent;
             font-weight: bold;
