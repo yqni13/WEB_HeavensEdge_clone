@@ -22,7 +22,7 @@ function carouselBox3() {
     var image = document.getElementById("box3_img");
     var locationReference = '';
     currentFile === 'index.html' ? locationReference = './' : locationReference = '../';
-    
+
     if (sliderIndex >= box3Images.length) {
         sliderIndex = 0;
     }
@@ -98,7 +98,7 @@ function loadFooter() {
             "Location": "location.html"
         },
         "Terms & Conditions": {
-            "Booking": "booking.html",
+            "Booking": "https://heavensedge.reserve-online.net/",
             "Privacy Policy": "policy.html",
             "Terms of use": "terms.html"
         },
@@ -164,7 +164,12 @@ function loadFooter() {
     Object.entries(linksElements['Terms & Conditions']).forEach(([key, value]) => {
         let li_element = document.createElement('li');
         let a_element = document.createElement('a');
-        a_element.href = locationReference + value;
+        if(key === 'Booking') {
+            a_element.href = value;
+            a_element.target = "_blank";
+        } else {
+            a_element.href = locationReference + value;
+        }
         a_element.innerHTML = key;
         li_element.append(a_element);
         ul_element2.append(li_element);
