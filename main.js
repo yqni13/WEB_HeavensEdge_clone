@@ -1,29 +1,40 @@
 
 var sliderIndex = 0;
 var box3Images = [
-    "./assets/gallery/photo16.png",
-    "./assets/gallery/photo1.png",
-    "./assets/gallery/photo15.png",
-    "./assets/gallery/photo10.png",
-    "./assets/gallery/photo9.png"
+    "assets/gallery/photo16.png",
+    "assets/gallery/photo1.png",
+    "assets/gallery/photo15.png",
+    "assets/gallery/photo10.png",
+    "assets/gallery/photo9.png"
 ]
+var currentFile = '';
 
 initProject();
 
 function initProject() {
+    currentFile = getCurrentFile();
     loadNavBar();
     loadFooter();
-    carouselBox3();
+    if(currentFile === 'index.html') carouselBox3();
 }
 
 function carouselBox3() {
     var image = document.getElementById("box3_img");
+    var locationReference = '';
+    currentFile === 'index.html' ? locationReference = './' : locationReference = '../';
+    
     if (sliderIndex >= box3Images.length) {
         sliderIndex = 0;
     }
-    image.style.backgroundImage = "url(" + box3Images[sliderIndex] + ")";
+    
+    image.style.backgroundImage = "url(" + locationReference + box3Images[sliderIndex] + ")";
     sliderIndex++;
     setTimeout(carouselBox3, 5000);
+}
+
+function getCurrentFile() {
+    let url = location.href;
+    return url.substring(url.lastIndexOf('/')+1);
 }
 
 function loadNavBar() {
@@ -43,9 +54,11 @@ function loadNavBar() {
     let i_element = document.createElement('i');
     
     // logo
-    logo_element.href = "./index.html";
+    var locationReference = '';
+    currentFile === 'index.html' ? locationReference = '.' : locationReference = '..';
+    logo_element.href = locationReference + "/index.html";    
     logo_element.className = "logo";
-    img_element.src = "./assets/img/HeavensEdge_Logo.png";
+    img_element.src = locationReference + "/assets/img/HeavensEdge_Logo.png";
     logo_element.appendChild(img_element);
 
     // ul
@@ -53,12 +66,14 @@ function loadNavBar() {
         let li_element = document.createElement('li');
         let a_element = document.createElement('a');
         if (key === 'Home') {
-            a_element.href = `./${value}`;
+            a_element.href = locationReference + `/${value}`;
         } else if (key === 'Booking') {
             a_element.href = value;
             a_element.target = "_blank";
         } else {
-            a_element.href = `./components/${value}`;
+            currentFile === 'index.html'
+                ? a_element.href = `./components/${value}`
+                : a_element.href = `./${value}`;
         }
         a_element.innerHTML = key;
         li_element.appendChild(a_element);
@@ -75,20 +90,22 @@ function loadNavBar() {
 }
 
 function loadFooter() {
+    var locationReference = '';
+    currentFile === 'index.html' ? locationReference = './components/' : locationReference = './';
     const linksElements = {
         "Resort Information": {
-            "Gallery": "./components/gallery.html",
-            "Location": "./components/location.html"
+            "Gallery": "gallery.html",
+            "Location": "location.html"
         },
         "Terms & Conditions": {
-            "Booking": "./components/booking.html",
-            "Privacy Policy": "./components/policy.html",
-            "Terms of use": "./components/terms.html"
+            "Booking": "booking.html",
+            "Privacy Policy": "policy.html",
+            "Terms of use": "terms.html"
         },
         
         "Heavens Edge": {
-            "Newsletter": "./components/newsletter.html",
-            "Reviews": "./components/reviews.html"
+            "Newsletter": "newsletter.html",
+            "Reviews": "reviews.html"
         }
     }
     const contactElements = {
@@ -131,7 +148,7 @@ function loadFooter() {
     Object.entries(linksElements['Resort Information']).forEach(([key, value]) => {
         let li_element = document.createElement('li');
         let a_element = document.createElement('a');
-        a_element.href = value;
+        a_element.href = locationReference + value;
         a_element.innerHTML = key;
         li_element.append(a_element);
         ul_element1.append(li_element);
@@ -147,7 +164,7 @@ function loadFooter() {
     Object.entries(linksElements['Terms & Conditions']).forEach(([key, value]) => {
         let li_element = document.createElement('li');
         let a_element = document.createElement('a');
-        a_element.href = value;
+        a_element.href = locationReference + value;
         a_element.innerHTML = key;
         li_element.append(a_element);
         ul_element2.append(li_element);
@@ -163,7 +180,7 @@ function loadFooter() {
     Object.entries(linksElements['Heavens Edge']).forEach(([key, value]) => {
         let li_element = document.createElement('li');
         let a_element = document.createElement('a');
-        a_element.href = value;
+        a_element.href = locationReference + value;
         a_element.innerHTML = key;
         li_element.append(a_element);
         ul_element3.append(li_element);
