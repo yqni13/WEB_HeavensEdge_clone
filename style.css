@@ -2,6 +2,7 @@
 @import "./stylesheets/defines.css";
 @import "./stylesheets/icons.css";
 @import "./stylesheets/media.css";
+@import "./stylesheets/navbar.css";
 @import "./stylesheets/footer.css";
 
 * {
@@ -96,53 +97,7 @@ p {
 }
 
 
-.nav-bar {
-    position: fixed;
-    width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: end; 
-    background: rgba(255, 255, 255, 0.04);
-    border-bottom: solid rgba(255, 255, 255, 0.3) 2px;
-    backdrop-filter: blur(5px);
-
-    .logo {
-        display: flex;
-        margin-right: auto;
-    }
-    img {
-        width: 150px;
-        height: auto;
-        padding: 25px 0;
-        margin-left: 50px;
-    }
-    
-    ul {
-        display: flex;
-        list-style: none;
-        padding-right: 100px;
-
-        li {
-            padding: 0 20px;
-            a {
-                font-size: 18px;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: var(--hotel-text);
-                text-shadow: 4px 4px 20px var(--hotel-text);
-                background: transparent;
-                font-weight: bold;
-            }
-        }
-    }
-
-    .burger-menu {
-        display: flex;
-        color: var(--logo-gold);
-        margin-right: 50px;
-    }    
-}
 
 .box1 {
     justify-content: center;

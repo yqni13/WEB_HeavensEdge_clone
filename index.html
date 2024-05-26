@@ -13,21 +13,10 @@
 </head>
 <body>
 
-    <nav class="nav-bar">
-        <a href="" class="logo">
-            <img src="./assets/img/HeavensEdge_Logo.png" alt="no_img">
-        </a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <!-- <li><a href="/about">About</a></li>
-            <li><a href="/suites_and_villas">Suites & Villas</a></li>
-            <li><a href="/experience">Experience</a></li>
-            <li><a href="/gallery">Gallery</a></li> -->
-        </ul>
-        <a href="" class="burger-menu">
-            <i class="icon-BurgerMenu"></i>
-        </a>
+    <nav class="nav_bar" id="nav_bar_target">
+        <!-- loaded dynamically loadNavBar() -->
     </nav>
+
     <section class="container box1">
         <h1>Elevate to serenity</h1>
     </section>
@@ -52,7 +41,6 @@
         </div>
     </section>
     <section class="container box4">
-
     </section>
     <section class="container box5">
         <div class="wrapper_box5">
@@ -140,77 +128,11 @@
         </div>
     </section>
     
-    <footer>
-        <div class="wrapper_footer">
-            <div class="links">
-                <div id="links_column1">
-                    <h5>Resort Information</h5>
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Location</a></li>
-                    </ul>
-                </div>
-                <div id="links_column2">
-                    <h5>Terms & Conditions</h5>
-                    <ul>
-                        <li><a href="">Booking</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms of use</a></li>
-                    </ul>
-                </div>
-                <div id="links_column3">
-                    <h5>Heavens Edge</h5>
-                    <ul>
-                        <li><a href="">Newsletter</a></li>
-                        <li><a href="">Reviews</a></li>
-                    </ul>
-                </div>
-                <p>2024 <i class="icon-CopyRight" id="copyright"></i> Heavens Edge. All rights reserved.</p>
-            </div>
-            <div class="contact">
-                <div class="contact_us">
-                    <h5>Contact us</h5>
-                </div>
-                <div class="wrapper_contact">
-                    <div class="contact_data">
-                        <div class="contact_details data1">
-                            <i class="icon-Reception"></i>
-                            <h6>Reception</h6>
-                            <p>+30 22860 21992</p>
-                        </div>
-                        <div class="contact_details data2">
-                            <i class="icon-Phone"></i>
-                            <h6>Reservations</h6>
-                            <p>+30 21076 58310</p>
-                        </div>
-                        <div class="contact_details data3">
-                            <i class="icon-Mail"></i>
-                            <h6>E-Mail</h6>
-                            <p>info@heavensedge.gr</p>
-                        </div>
-                    </div>                
-                    <div class="contact_msg">
-                        <form action="">
-                            <div class="col-6 uneven">
-                                <input class="msg_uneven" type="text" placeholder="First Name">
-                            </div>
-                            <div class="col-6 even">
-                                <input class="msg_even" type="text" placeholder="Last Name">
-                            </div>
-                            <div class="col-6 uneven">
-                                <input class="msg_uneven" type="text" placeholder="Email">
-                            </div>
-                            <div class="col-6 even">
-                                <input class="msg_even" type="text" placeholder="Phone">
-                            </div>
-                            <textarea placeholder="Message"></textarea>
-                            <button>Submit</button>
-                        </form>
-                    </div>                
-                </div>         
-            </div>
-        </div>
+    <footer id="footer_target">
+        <!-- loaded dynamically loadFooter() -->
     </footer>
+
+
     <script src="main.js"></script>    
 </body>
 </html>
