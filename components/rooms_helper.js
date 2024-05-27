@@ -120,7 +120,7 @@ function getCurrentFile() {
 }
 
 function carouselRoom1() {
-    var image = document.getElementById('room1_img');
+    var image = document.getElementById('room1_overview_img');
     if (sliderIndex1 >= room1Images.length) sliderIndex1 = 0;
 
     image.style.backgroundImage = "url(" + room1Images[sliderIndex1] + ")";
@@ -128,7 +128,7 @@ function carouselRoom1() {
     setTimeout(carouselRoom1, 3500);
 }
 function carouselRoom2() {
-    var image = document.getElementById('room2_img');
+    var image = document.getElementById('room2_overview_img');
     if (sliderIndex2 >= room2Images.length) sliderIndex2 = 0;
 
     image.style.backgroundImage = "url(" + room2Images[sliderIndex2] + ")";
@@ -136,7 +136,7 @@ function carouselRoom2() {
     setTimeout(carouselRoom2, 3500);
 }
 function carouselRoom3() {
-    var image = document.getElementById('room3_img');
+    var image = document.getElementById('room3_overview_img');
     if (sliderIndex3 >= room3Images.length) sliderIndex3 = 0;
 
     image.style.backgroundImage = "url(" + room3Images[sliderIndex3] + ")";
@@ -145,7 +145,7 @@ function carouselRoom3() {
 }
 
 function carouselRoom4() {
-    var image = document.getElementById('room4_img');
+    var image = document.getElementById('room4_overview_img');
     if (sliderIndex4 >= room4Images.length) sliderIndex4 = 0;
 
     image.style.backgroundImage = "url(" + room4Images[sliderIndex4] + ")";

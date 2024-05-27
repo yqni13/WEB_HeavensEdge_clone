@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
     <title>2-bedroom villa</title>
 </head>
 <body>
@@ -11,19 +12,69 @@
         <!-- loaded dynamically loadNavBar() -->
     </nav>
 
-    <section>
-        <p>welcome to rooms, two-bedroom villa</p>
+    <section class="room_detail_box1" id="room3_box1"></section>
+
+    <section class="room_detail_box2">
+        <div class="wrapper_header">
+            <h3 class="jost-googlefonts">Interior: 75m² / 807ft² | Rain-fall Shower | Outdoor Jacuzzi | Max occupancy: 4 adults</h3>
+            <h2 class="lora-googlefonts">Two-Bedroom Villa with Plunge Pool</h2>
+        </div>
+        <div class="wrapper_room">
+            <div class="room_16to9_ratio_wrapper">
+                <div class="room_img" id="room3_img_left"></div>
+            </div>
+            <div class="wrapper_description">
+                <p class="jost-googlefonts">
+                    Step into the lap of luxury at Heaven's Edge and discover our exquisite Two-Bedroom Villa with plunge pool covering a 75m² area, where every detail is crafted to perfection.<br>Each of its two separate cave bedrooms features a spacious layout with a comfortable king-size bed, ensuring restful nights of rejuvenation. The villa, which can comfortably accommodate up to 4 persons, boasts a beautifully appointed living room adorned with a cozy fireplace, a dining table and a plush couch that adds to the villa's versatility.
+                </p>
+                <a class="jost-googlefonts details-btn" href="">Check Rates</a>
+            </div>
+        </div>
+        <div class="wrapper_room">
+            <div class="wrapper_description">
+                <p class="jost-googlefonts">
+                    Guests can indulge their culinary desires in the fully equipped kitchenette, complete with modern amenities such as a refrigerator, tea and Nespresso coffee maker and a toaster, or by ordering in for an extra dose of self-spoiling. Standard comforts like air conditioning, fast Wi-Fi, safe box and soundproof walls guarantee a peaceful sleep, while the sitting area outside, on the private terrace, offers the perfect resting spot to gaze at the hypnotizing views of the caldera. The only acceptable time to take a break from the view is to watch your step as you enter your private, plunge pool, hand-crafted to provoke a set of memorable moments in its hot waters.<br>From the privacy of this home-away-from-home and a spectacular vista of the Aegean Sea, the caldera and the famous Santorini sunset, our villa promises an unforgettable experience of luxury and tranquility at Heaven's Edge.
+                </p>
+                <a class="jost-googlefonts details-btn" href="">Check Rates</a>
+            </div>
+            <div class="room_16to9_ratio_wrapper">
+                <div class="room_img" id="room3_img_right"></div>
+            </div>
+        </div>
     </section>
 
-    <section class="rooms_gallery">
-        <a href="./rooms_superior-suite.html">previous room (superior suite)</a>
-        <a href="./rooms_heavensedge-villa.html">next room (heavens edge villa)</a>
+    <section class="room_detail_box3" id="room3_box3"></section>
+
+    <section class="room_detail_box4">
+        <div class="wrapper_facilities">
+            <h2 class="lora-googlefonts">Comforts & Amenities</h2>
+            <p class="jost-googlefonts">
+                Plunge Pool | Wi-Fi Internet Access (free of charge) | Individually Controlled Air Condition | Safe Deposit Box | Telephone | Flat Screen TV with streaming service | Closet | 2 Bedrooms with King-Size Bed | Living Room | Sofa | Equipped Kitchen | Nespresso Machine | Microwave | Wine Cooler Cabinet | Mini-Bar | Toiletries & Bath Amenities | Bathrobes & Slippers | En-suite bathroom with rain-fall shower | Hairdryer | Pool Towels | Daily Maid Service | Iron & Ironing Board (on request) | Non-smoking room | Soundproof walls | Terrace with outdoor furniture & sunbeds | Caldera view
+            </p>
+        </div>
+        <div class="wrapper_gallery_header">
+            <h3 class="jost-googlefonts">Gallery</h3>
+        </div>
+        <div id="wrapper_gallery_img">
+            <!-- dynamically loaded from rooms_helper.js -->
+        </div>
+        <div class="wrapper_room_navigation">
+            <div class="room_previous_btn">
+                <h3 class="jost-googlefonts">Previous Room</h3>
+                <a href="./rooms_superior-suite.html">Superior Suite with outdoor hot tub</a>
+            </div>
+            <div class="room_next_btn">
+                <h3 class="jost-googlefonts">Next Room</h3>
+                <a href="./rooms_heavensedge-villa.html">Heavens Edge Villa with indoor pool</a>
+            </div>
+        </div>
     </section>
 
     <footer id="footer_target">
         <!-- loaded dynamically loadFooter() -->
     </footer>
 
+    <script src="./rooms_helper.js"></script>
     <script src="../main.js"></script>
 </body>
 </html>

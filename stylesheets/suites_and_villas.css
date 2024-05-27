@@ -1,7 +1,7 @@
 /* TODO: remove temporary style */
 .rooms_gallery { margin-top:300px; }
 
-.rooms_box1 {
+.rooms_overview_box1 {
     height: 100vh;
     width: 100%;
     background-image: url("../assets/gallery/rooms/rooms_box1.jpg");
@@ -11,7 +11,7 @@
     filter:brightness(0.8);
 }
 
-.rooms_box2 {
+.rooms_overview_box2 {
     width: 100%;
     background-color: white;
     padding: 50px 0px;
@@ -28,10 +28,14 @@
     /* padding: 50px 0; */
 }
 
-.room_img {
-    margin: 25px 100px;
+.room_16to9_ratio_wrapper {
     width: 65%;
-    background-size: cover;
+    margin: 50px 0;
+    .room_img {
+        width: 100%;
+        padding-top: 56.25%;
+        background-size: cover;
+    }
 }
 
 .wrapper_description {
@@ -41,27 +45,28 @@
     text-align: -webkit-center;
     text-align: -moz-center;
     p {
-        line-height: 30px;
+        line-height: 24px;
     }
 }
 
-/* ROOM1 - Deluxe Suit */
-
-.room1_box1 {
+/* basic structure room components*/
+.room_detail_box1 {
     height: 100vh;
-    width: 100%;
-    background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_1.jpg");
+    width: 100%;    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     filter: brightness(0.8);
 }
 
-.room1_box2 {
-    h3 { text-transform:none }
+.room_detail_box2 {
+    h3 { 
+        text-transform:none;
+        color: var(--header-grey);
+        font-size: 16px;
+    }
+    h2 { letter-spacing: 2px; }
     .details-btn { text-transform: uppercase }
-    #room1_img_left { background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_2.jpg") }
-    #room1_img_right { background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_3.jpg") }
     p {
         text-align: justify;
         margin-bottom: 100px;
@@ -70,125 +75,148 @@
         padding: 100px 0;
     }
 }
-.room1_box3 {
+.room_detail_box3 {
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_4.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.room1_box4 {
+.room_detail_box4 {
     text-align: -webkit-center;
     text-align: -moz-center;
     padding-top: 50px;
     background-color: var(--hotel-footer);
     border-bottom: solid var(--alice-blue) 1px;
-    .wrapper_facilities {
-        width: 40%;
-        color: var(--alice-blue);
-        h2 {
-            color: var(--logo-gold);
-        }
-        p {
-            text-align: justify;
-            line-height: 30px;
-        }
+}
+.wrapper_facilities {
+    width: 40%;
+    color: var(--alice-blue);
+    h2 {
+        color: var(--logo-gold);
     }
-    .wrapper_gallery_header {
-        margin-top: 100px;
-        h3 {
-            color: var(--alice-blue);
-            text-align: center;
-        }
-    }
-    #wrapper_gallery_img {
-        display: flex;
-        flex-wrap: wrap;
-        .wrapper_gallery_single_img {
-            width: calc((100vw / 3) - 4px);
-            margin: 2px;
-            img {
-                height: 100%;
-                width: 100%;
-                &:hover {
-                    animation-name: darken-gallery;
-                    animation-duration: 1s;
-                    animation-timing-function: ease-out;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-    }
-    .wrapper_room_navigation {
-        width: 100%;
-        text-transform: uppercase;
-        margin: 25px 0;
-        .room_previous_btn {
-            padding-left: 100px;
-            width: calc(50% - 100px);
-            text-align: start;
-            border-right: solid var(--alice-blue) 1px;
-        }
-        .room_next_btn {
-            padding-right: 100px;
-            width: calc(50% - 100px);
-            text-align: end;
-            border-left: solid var(--alice-blue) 1px;
-        }
-        h3 {
-            color: var(--alice-blue);
-            font-size: 12px;
-        }
-        a {
-            text-decoration: none;
-            color: var(--logo-gold);
-            &:hover {
-                color: var(--hotel-text);
-            }
-        }
-    }
-    .left_navigation {
-        text-align: -webkit-left;
-        text-align: -moz-left;
-    }
-    .right_navigation {
-        text-align: -webkit-right;
-        text-align: -moz-right;
+    p {
+        text-align: justify;
+        line-height: 30px;
     }
 }
+.wrapper_gallery_header {
+    margin-top: 100px;
+    h3 {
+        color: var(--alice-blue);
+        text-align: center;
+    }
+}
+#wrapper_gallery_img {
+    display: flex;
+    flex-wrap: wrap;
+    .wrapper_gallery_single_img {
+        width: calc((100vw / 3) - 4px);
+        margin: 2px;
+        img {
+            height: 100%;
+            width: 100%;
+            &:hover {
+                animation-name: darken-gallery;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+.wrapper_room_navigation {
+    width: 100%;
+    text-transform: uppercase;
+    margin: 25px 0;
+    display: flex;
+    .room_previous_btn {
+        padding-left: 100px;
+        width: calc(50% - 100px);
+        text-align: start;
+        border-right: solid var(--alice-blue) 1px;
+    }
+    .room_next_btn {
+        padding-right: 100px;
+        width: calc(50% - 100px);
+        text-align: end;
+        border-left: solid var(--alice-blue) 1px;
+    }
+    h3 {
+        color: var(--alice-blue);
+        font-size: 12px;
+    }
+    a {
+        text-decoration: none;
+        color: var(--logo-gold);
+        &:hover {
+            color: var(--hotel-text);
+        }
+    }
+}
+.left_navigation {
+    text-align: -webkit-left;
+    text-align: -moz-left;
+}
+.right_navigation {
+    text-align: -webkit-right;
+    text-align: -moz-right;
+}
 
+/* ROOM1 - Deluxe Suit */
+#room1_box1 {
+    background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_1.jpg");
+}
+#room1_img_left { 
+    background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_2.jpg")
+}
+#room1_img_right {
+    background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_3.jpg") 
+}
+#room1_box3 {
+    background-image: url("../assets/gallery/rooms/1deluxe_suite/deluxe_suite_heavensedge_4.jpg");
+}
 
 /* ROOM2 - Superior Suite */
-.room2_box1 {
-    height: 100vh;
-    width: 100%;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: brightness(0.8);
+#room2_box1 {
+    background-image: url("../assets/gallery/rooms/2superior_suite/superiorsuite_heavensedge_1.jpg");
+}
+#room2_img_left {
+    background-image: url("../assets/gallery/rooms/2superior_suite/superiorsuite_heavensedge_2.jpg")
+}
+#room2_img_right {
+    background-image: url("../assets/gallery/rooms/2superior_suite/superiorsuite_heavensedge_3.jpg")
+}
+#room2_box3 {
+    background-image: url("../assets/gallery/rooms/2superior_suite/superiorsuite_heavensedge_4.jpg");
 }
 
 /* ROOM3 - Two-Bedroom Villa */
-.room3_box1 {
-    height: 100vh;
-    width: 100%;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: brightness(0.8);
+#room3_box1 {
+    background-image: url("../assets/gallery/rooms/3two_bedroom/two_bedroom_suite_heavensedge_1.jpg");
+}
+#room3_img_left {
+    background-image: url("../assets/gallery/rooms/3two_bedroom/two_bedroom_suite_heavensedge_2.jpg")
+}
+#room3_img_right {
+    background-image: url("../assets/gallery/rooms/3two_bedroom/two_bedroom_suite_heavensedge_3.jpg")
+}
+#room3_box3 {
+    background-image: url("../assets/gallery/rooms/3two_bedroom/two_bedroom_suite_heavensedge_4.jpg");
 }
 
 /* ROOM4 - Heavens Edge Villa */
-.room4_box1 {
-    height: 100vh;
-    width: 100%;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: brightness(0.8);
+#room4_box1 {
+    background-image: url("../assets/gallery/rooms/4heavensedge_villa/villa_heavensedge_1.jpg");
 }
+#room4_img_left {
+    background-image: url("../assets/gallery/rooms/4heavensedge_villa/villa_heavensedge_2.jpg")
+}
+#room4_img_right {
+    background-image: url("../assets/gallery/rooms/4heavensedge_villa/villa_heavensedge_3.jpg")
+}
+#room4_box3 {
+    background-image: url("../assets/gallery/rooms/4heavensedge_villa/villa_heavensedge_4.jpg");
+}
+
