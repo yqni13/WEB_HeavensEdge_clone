@@ -5,6 +5,7 @@
 @import "./stylesheets/navbar.css";
 @import "./stylesheets/footer.css";
 @import "./stylesheets/suites_and_villas.css";
+@import "./stylesheets/about.css";
 
 * {
     font-family: "Noto Serif", serif;
