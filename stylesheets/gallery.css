@@ -1,0 +1,110 @@
+body {
+    width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gallery_box {
+    padding: 100px 0;
+    background: var(--gradient-bluewhite);
+}
+
+.wrapper_gallery_header {
+    margin: 25px 150px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    h2 {
+        padding-top: 50px;
+    }
+}
+
+.wrapper_gallery_content {
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper_gallery_img {
+    margin: 0 2px 1px 2px;
+    width: calc((100vw / 5) - 4px);
+    object-fit: cover;
+    img {
+        aspect-ratio: 900 / 600;
+        width: 100%;
+        &:hover {
+            animation-name: darken-gallery;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+#gallery_slider_box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index:200;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .gallery_slider_menu_wrapper {
+        width: 100%;
+        display: flex;
+        .gallery_slider_menu_start {
+            width: 50%;
+            text-align: -webkit-left;
+            padding: 25px;
+            span {
+                font-size: 30px;
+                color: var(--logo-gold);
+            }
+        }
+        .gallery_slider_menu_end {
+            width: 50%;
+            text-align: -webkit-right;
+            padding: 25px;
+            i {
+                color: var(--logo-gold);
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    .gallery_slider_content_wrapper {
+        width: 100%;
+        display: flex;
+        i {
+            width: 40px;
+            height: 40px;
+            color: var(--logo-gold);
+        }
+
+        .gallery_slider_content_previous {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery_slider_content_img {
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+        #gallery_slider_img_bg {
+            width: 100%;
+            aspect-ratio: 900 / 600;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(205, 206, 255, 0.1);
+        }
+        .gallery_slider_content_next {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
