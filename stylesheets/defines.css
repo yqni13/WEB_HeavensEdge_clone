@@ -19,4 +19,15 @@
     font-weight: 400;
     font-style: normal;
 }
-  
+
+.lora-googlefonts {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes darken-gallery {
+    from {filter: brightness(1)}
+    to {filter: brightness(0.6)}
+}

@@ -83,6 +83,9 @@
     --logo-gold: #FBBB1E;
     --hotel-footer: #0C2645;
     --hotel-text: #4D7BA9;
+    --header-grey: #737475;
+    --dots-hover: #717171;
+    --dots-passive: #bbbbbb;
 
     /* BACKGROUND-IMAGE LINEAR-GRADIENT */
     --yqni13-gradient: linear-gradient(167deg, #650D88 42%, #BC0C79 90%);

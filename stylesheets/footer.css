@@ -7,7 +7,7 @@ footer {
     .wrapper_footer {
         display: flex;
         padding: 50px;
-        .links {
+        .wrapper_links {
             display: flex;
             flex-wrap:wrap;
             width:55%;

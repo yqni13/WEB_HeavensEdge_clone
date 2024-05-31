@@ -2,7 +2,12 @@
 @import "./stylesheets/defines.css";
 @import "./stylesheets/icons.css";
 @import "./stylesheets/media.css";
+@import "./stylesheets/navbar.css";
 @import "./stylesheets/footer.css";
+@import "./stylesheets/suites_and_villas.css";
+@import "./stylesheets/about.css";
+@import "./stylesheets/experience.css";
+@import "./stylesheets/gallery.css";
 
 * {
     font-family: "Noto Serif", serif;
@@ -81,11 +86,12 @@ p {
 }
 
 .details-btn {
+    text-decoration: none;
     background-color: var(--logo-gold);
     color: var(--rich-black);
-    padding: 6px 20px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 2.5px;
     margin: 16px 0;
     font-size: 12px;
     cursor: pointer;
@@ -93,55 +99,6 @@ p {
         background-color: var(--hotel-footer);
         color: var(--logo-gold);
     }
-}
-
-
-.nav-bar {
-    position: fixed;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: end; 
-    background: rgba(255, 255, 255, 0.04);
-    border-bottom: solid rgba(255, 255, 255, 0.3) 2px;
-    backdrop-filter: blur(5px);
-
-    .logo {
-        display: flex;
-        margin-right: auto;
-    }
-    img {
-        width: 150px;
-        height: auto;
-        padding: 25px 0;
-        margin-left: 50px;
-    }
-    
-    ul {
-        display: flex;
-        list-style: none;
-        padding-right: 100px;
-
-        li {
-            padding: 0 20px;
-            a {
-                font-size: 18px;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: var(--hotel-text);
-                text-shadow: 4px 4px 20px var(--hotel-text);
-                background: transparent;
-                font-weight: bold;
-            }
-        }
-    }
-
-    .burger-menu {
-        display: flex;
-        color: var(--logo-gold);
-        margin-right: 50px;
-    }    
 }
 
 .box1 {
@@ -321,10 +278,7 @@ p {
     }
 }
 
-@keyframes darken-gallery {
-    from {filter: brightness(1)}
-    to {filter: brightness(0.6)}
-}
+
 
 @keyframes autoplay1 {
     0% { visibility: visible }
@@ -341,23 +295,102 @@ p {
 
 @keyframes slides-set-1 {
     0% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
     31% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
     34% {
-      opacity: 0;
-      transform: scale(1.05);
+        opacity: 0;
+        transform: scale(1.05);
     }
     97% {
-      opacity: 0;
-      transform: scale(1.05);
+        opacity: 0;
+        transform: scale(1.05);
     }
     100% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
+}
+
+/* LOCATION component*/
+.location_box1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./assets/gallery/photo31.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.location_box2 {
+    
+    .wrapper_maps {
+        span {
+            /* leaflet buttons zoom in/out */
+            font-size: 30px;
+        }
+        #map {
+            height: 65vh;
+        }
+    }
+}
+
+/* TERMS OF USE component*/
+.terms_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
+
+/* PRIVACY POLICE component*/
+.privacy_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
+
+/* NEWSLETTER component*/
+.newsletter_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
+
+/* REVIEWS component*/
+.reviews_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
