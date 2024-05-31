@@ -6,6 +6,8 @@
 @import "./stylesheets/footer.css";
 @import "./stylesheets/suites_and_villas.css";
 @import "./stylesheets/about.css";
+@import "./stylesheets/experience.css";
+@import "./stylesheets/gallery.css";
 
 * {
     font-family: "Noto Serif", serif;
@@ -293,23 +295,102 @@ p {
 
 @keyframes slides-set-1 {
     0% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
     31% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
     34% {
-      opacity: 0;
-      transform: scale(1.05);
+        opacity: 0;
+        transform: scale(1.05);
     }
     97% {
-      opacity: 0;
-      transform: scale(1.05);
+        opacity: 0;
+        transform: scale(1.05);
     }
     100% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
+}
+
+/* LOCATION component*/
+.location_box1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./assets/gallery/photo31.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.location_box2 {
+    
+    .wrapper_maps {
+        span {
+            /* leaflet buttons zoom in/out */
+            font-size: 30px;
+        }
+        #map {
+            height: 65vh;
+        }
+    }
+}
+
+/* TERMS OF USE component*/
+.terms_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
+
+/* PRIVACY POLICE component*/
+.privacy_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
+
+/* NEWSLETTER component*/
+.newsletter_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}
+
+/* REVIEWS component*/
+.reviews_box1 {
+    width: 100%;
+    display: flex;
+    padding: calc((100vh - 472px) / 2) 0;
+    justify-content: center;
+    span {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: var(--logo-gold);
+        font-size: 18px;
+    }
+}

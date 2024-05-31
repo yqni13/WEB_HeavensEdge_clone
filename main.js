@@ -104,7 +104,7 @@ function loadFooter() {
         "Terms & Conditions": {
             "Booking": "https://heavensedge.reserve-online.net/",
             "Privacy Policy": "footer_policy.html",
-            "Terms of use": "footer_terms.html"
+            "Terms of Use": "footer_terms.html"
         },
         
         "Heavens Edge": {
