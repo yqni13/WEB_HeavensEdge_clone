@@ -18,7 +18,7 @@ function setupMap() {
     L.tileLayer(tilelayer, {
         minZoom: 0,
         maxZoom: 20,
-        // attribution: attribution
+        attribution: '84700, Imerovigli, Santorini, Greece'
     }).addTo(map);
     // L.tileLayer(tilelayer, {
     //     maxZoom: 19,

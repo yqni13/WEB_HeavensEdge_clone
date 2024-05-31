@@ -15,3 +15,4 @@ To enable all window-shaped images of components, you need to run project over h
 - parallax effect with fixed full screen wallpapers
 - images shaped by form of svg
 - leaflet maps imported to display location of hotel when component is navigated to
+- Privacy-Policy and Terms of use contain dummy data created by https://termly.io/

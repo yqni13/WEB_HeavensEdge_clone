@@ -100,9 +100,9 @@ function openGallerySlider(path) {
     activeImgIndex = galleryImages.indexOf(activeImgPath);
     spanImgPosition.innerHTML = `${activeImgIndex+1} / ${galleryImages.length}`;
     iconClose.setAttribute('onclick', 'closeGallerySlider()');
-    sliderNavPrevious.setAttribute('onclick', "updateGallerySlider('previous')");
+    iconPrevious.setAttribute('onclick', "updateGallerySlider('previous')");
     sliderImg.style.backgroundImage = `url(${activeImgPath})`;
-    sliderNavNext.setAttribute('onclick', "updateGallerySlider('next')");
+    iconNext.setAttribute('onclick', "updateGallerySlider('next')");
     
     // assembling
     menuStart.append(spanImgPosition);
