@@ -10,6 +10,8 @@ To enable all window-shaped images of components, you need to run project over h
 ## SPECIALTIES:
 
 - image carousel (control by dots; clearTimeout to reset settimeout)
-- image slideshow (automatic sliding controlled by settimeout)
+- image slideshow [automatic] (sliding controlled by settimeout)
+- image slideshow [manual] (customized slider shows up-scaled image from gallery and updates picture via previous/next buttons)
 - parallax effect with fixed full screen wallpapers
 - images shaped by form of svg
+- leaflet maps imported to display location of hotel when component is navigated to
