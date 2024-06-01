@@ -3,27 +3,27 @@
     width: 100%;
     z-index: 100;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: end; 
-    background: rgba(255, 255, 255, 0.04);
     border-bottom: solid rgba(255, 255, 255, 0.3) 2px;
     backdrop-filter: blur(10px);
 
     .logo {
-        display: flex;
         margin-right: auto;
+        order: 1;
     }
     img {
         width: 150px;
         height: auto;
         padding: 25px 0;
         margin-left: 50px;
+
     }
     ul {
-        display: flex;
         list-style: none;
-        padding-right: 100px;
-    
+        margin-right: 25px;
+        order: 2;
         li {
             padding: 0 20px;
         }
@@ -31,17 +31,15 @@
             font-size: 18px;
             text-transform: uppercase;
             text-decoration: none;
-            color: var(--rich-black);
-            /* color: var(--hotel-text); */
-            text-shadow: 4px 4px 20px var(--hotel-text);
             background: transparent;
             font-weight: bold;
         }
     }
     
     .burger-menu {
-        display: none;
         color: var(--logo-gold);
-        margin-right: 50px;
+        padding: 10px;
+        margin-right: 25px;
+        order: 3;
     }    
 }

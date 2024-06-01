@@ -24,7 +24,7 @@ html, body {
 
 h1 {
     /* example: Elevate to serenity */
-    font-size: 120px;
+    font-size: 10vw;
     color: var(--alice-blue);
 }
 
@@ -118,6 +118,7 @@ p {
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
+    background-repeat: no-repeat;
     background-position-y: -250px;
     position: fixed;
     width: 100%;
