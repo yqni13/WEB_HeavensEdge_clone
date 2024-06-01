@@ -26,9 +26,10 @@
 }
 
 [data-nav="navMobileExtended"] {
-    --nav-logo: flex;
+    --nav-logo: block;
     --logo-filter: var(--signature-aliceblue);
     --nav-burgermenu: flex;
+    --padding-burgermenu: 25px; 
     --nav-ul: inline-block;
     --ul-text: var(--alice-blue);
     --nav-size: 100%;
@@ -42,6 +43,7 @@
     --nav-logo: none;
     --logo-filter: none;
     --nav-burgermenu: flex;
+    --padding-burgermenu: 5px 20px 5px 0;
     --nav-ul: none;
     --ul-text: var(--rich-black);
     --nav-size: auto;
@@ -54,6 +56,7 @@
     --nav-logo: flex;
     --logo-filter: none;
     --nav-burgermenu: none;
+    --padding-burgermenu: 0;
     --nav-ul: flex;
     --ul-text: var(--rich-black);
     --nav-size: auto;

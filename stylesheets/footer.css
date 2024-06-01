@@ -6,10 +6,12 @@ footer {
 
     .wrapper_footer {
         display: flex;
+        flex-wrap: wrap;
         padding: 50px;
         .wrapper_links {
             display: flex;
             flex-wrap:wrap;
+            order: 1;
             width:55%;
             div {
                 width: 30%;
@@ -46,6 +48,7 @@ footer {
             width:45%;
             display: flex;
             flex-wrap: wrap;
+            order: 2;
             .contact_us {
                 width: 100%;
             }
