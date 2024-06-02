@@ -24,49 +24,6 @@
     --deepnavy-blue: #011222;
     --rich-black: #020D19;
 
-    /* dark mode theme#1 dark-red */
-    --darkmode1-black1: #000000;
-    --darkmode1-red1: #3D0000;
-    --darkmode1-red2: #950101;
-    --darkmode1-red3: #FF0000;
-
-    /* dark mode theme#2 dark-orange */
-    --darkmode2-black1: #222831;
-    --darkmode2-grey1: #393E46;
-    --darkmode2-orange1: #FD7014;
-    --darkmode2-white1: #EEEEEE;
-
-    /* dark mode theme#3 dark-pink */
-    --darkmode3-black1: #000000;
-    --darkmode3-pink1: #86003C;
-    --darkmode3-pink2: #E41F7B;
-    --darkmode3-pink3: #FF8BA0;
-
-    /* dark mode theme#4 dark-turquoise */
-    --darkmode4-black1: #222831;
-    --darkmode4-grey1: #393E46;
-    --darkmode4-torquoise1: #00ADB5;
-    --darkmode4-torquoise2: #00FFF5;
-
-    /* dark mode theme#5 dark-purple */
-    --darkmode5-black1: #000000;
-    --darkmode5-purple1: #3E065F;
-    --darkmode5-purple2: #700B97;
-    --darkmode5-purple3: #8E05C2;
-
-    /* dark mode theme6 dark-grey */
-    --darkmode6-black1: #2A2438;
-    --darkmode6-grey1: #352F44;
-    --darkmode6-grey2: #5C5470;
-    --darkmode6-grey3: #DBD8E3;
-
-    /* white mode theme1 grey/brown/beige */
-    --whitemode1-champagne: #8fd0b8;
-    --whitemode1-sand: #EECAAB;
-    --whitemode1-grey: #E9E6DB;
-    --whitemode1-cultured: #FBF7F4;
-    --whitemode1-pink: #ca7394;
-
     /* theme colors */
     --theme-dark: #011222;
     --theme-grey: #393E46;
@@ -86,6 +43,7 @@
     --header-grey: #737475;
     --dots-hover: #717171;
     --dots-passive: #bbbbbb;
+    --navbg-transparent: rgba(255, 255, 255, 0.04);
 
     /* BACKGROUND-IMAGE LINEAR-GRADIENT */
     --yqni13-gradient: linear-gradient(167deg, #650D88 42%, #BC0C79 90%);
