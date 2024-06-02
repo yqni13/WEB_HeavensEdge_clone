@@ -28,6 +28,10 @@
 [data-nav="navMobileExtended"] {
     --nav-logo: block;
     --logo-filter: var(--signature-aliceblue);
+    --logo-size: 20rem;
+    --logo-order: 2;
+    --logo-padding: 25px 0;
+    --burger-order: 1;
     --nav-burgermenu: flex;
     --padding-burgermenu: 25px; 
     --nav-ul: inline-block;
@@ -42,8 +46,12 @@
 
 /* window.screen.width <= 768px */
 [data-nav="navMobileCollapsed"] {
-    --nav-logo: none;
+    --nav-logo: flex;
     --logo-filter: none;
+    --logo-size: 20vw;
+    --logo-order: 1;
+    --logo-padding: 5px 0 5px 20px;
+    --burger-order: 2;
     --nav-burgermenu: flex;
     --padding-burgermenu: 5px 20px 5px 0;
     --nav-ul: none;

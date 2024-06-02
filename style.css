@@ -327,24 +327,26 @@ p {
 }
 
 /* LOCATION component*/
-.location_box1 {
-    height: 100vh;
-    width: 100%;
-    background-image: url("./assets/gallery/photo31.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
-}
-.location_box2 {
-    
-    .wrapper_maps {
-        span {
-            /* leaflet buttons zoom in/out */
-            font-size: 30px;
-        }
-        #map {
-            height: 65vh;
+.location {
+    .location_box1 {
+        height: 100vh;
+        width: 100%;
+        background-image: url("./assets/gallery/photo31.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .location_box2 {
+        
+        .wrapper_maps {
+            span {
+                /* leaflet buttons zoom in/out */
+                font-size: 30px;
+            }
+            #map {
+                height: 65vh;
+                z-index: 1;
+            }
         }
     }
 }
