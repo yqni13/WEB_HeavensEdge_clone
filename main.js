@@ -8,18 +8,43 @@ var box3Images = [
     "assets/gallery/photo9.png"
 ]
 var currentFile = '';
+var mobileNavExpanded = false;
+const mobileNavWidth = 1024;
 
 initProject();
 
 function initProject() {
-    // var widthRequestSlowedDown = $.debounce(300, () => {
-    //     this.setNavWidthDynamically(window.screen.width);
-    // })
-    // window.addEventListener("resize", widthRequestSlowedDown, false);
+    
     currentFile = getCurrentFile();
     loadNavBar();
     loadFooter();
     if(currentFile === 'index.html') carouselBox3();
+
+    // init Width by checking device width and zoom level (zoom 100% === device width)
+    setNavWidthDynamically(window.screen.width);
+    setNavWidthDynamically(document.body.clientWidth);
+    
+    // screen width by device
+    var screenWidthRequestSlowedDown = _.debounce( () => {
+        setNavWidthDynamically(window.screen.width);
+    }, 250);
+    window.addEventListener("resize", screenWidthRequestSlowedDown, false);
+
+    // screen width by zoom level
+    var clientWidthRequestSlowedDown = _.debounce( () => {
+        setNavWidthDynamically(document.body.clientWidth);
+    }, 250);
+    window.addEventListener("resize", clientWidthRequestSlowedDown, false);
+}
+
+function setNavWidthDynamically(width) {
+    // sets data attribute for body and in media.scss style settings are applied
+
+    if(width > mobileNavWidth) {
+        document.body.setAttribute("data-nav", 'navDesktop');
+    } else {
+        document.body.setAttribute("data-nav", 'navMobileCollapsed');
+    }
 }
 
 function carouselBox3() {
@@ -80,6 +105,7 @@ function loadNavBar() {
                 : a_element.href = `./${value}`;
         }
         a_element.innerHTML = key;
+        a_element.setAttribute("onclick", "setMobileNavbar(true)");
         li_element.appendChild(a_element);
         ul_element.appendChild(li_element);
     })
@@ -87,10 +113,27 @@ function loadNavBar() {
     // burger-menu
     menu_element.className = "burger-menu";
     i_element.className = "icon-BurgerMenu";
+    i_element.setAttribute("onclick", "setMobileNavbar()")
     menu_element.appendChild(i_element);
 
     // final assemble
     navbar.append(logo_element, ul_element, menu_element);
+}
+
+function setMobileNavbar(closeAfterRouting = false) {
+    const screenWidth = window.screen.width;
+    if(screenWidth <= mobileNavWidth && closeAfterRouting) mobileNavExpanded = true;
+    if(screenWidth > mobileNavWidth && !closeAfterRouting) return;
+
+    if(screenWidth <= mobileNavWidth) {
+        if(mobileNavExpanded) {
+            document.body.setAttribute("data-nav", 'navMobileCollapsed')
+            mobileNavExpanded = false;
+        } else {
+            document.body.setAttribute("data-nav", 'navMobileExtended')
+            mobileNavExpanded = true;
+        }
+    }
 }
 
 function loadFooter() {

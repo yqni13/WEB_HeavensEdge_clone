@@ -24,9 +24,10 @@ html, body {
     }
     .wrapper_about_box2_img {
         width: 100%;
-        margin-top: 75px;
+        margin-top: 25px;
         img {
             height: 60vh;
+            aspect-ratio: 900 / 600;
             -webkit-mask-image: url("../assets/img/window_template.svg");
             -webkit-mask-size: contain;
             -webkit-mask-position: center;
@@ -36,10 +37,11 @@ html, body {
     .wrapper_about_box2_content {
         width: 33.33%;
         overflow:hidden;
-        padding: 50px 0;
+        padding: 25px 0;
     }
     p {
         line-height: 30px;
+        padding: 25px 0;
     }
 }
 .about_box3 {
@@ -72,7 +74,8 @@ html, body {
     .wrapper_about_box4_img {
         width: 100%;
         img {
-            height: 60vh;
+            aspect-ratio: 900 / 600;
+            height: 50vw;
             -webkit-mask-image: url("../assets/img/window_template.svg");
             -webkit-mask-size: contain;
             -webkit-mask-position: center;

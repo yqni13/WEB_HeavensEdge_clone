@@ -14,7 +14,7 @@
 .rooms_overview_box2 {
     width: 100%;
     background-color: white;
-    padding: 50px 0px;
+    padding: var(--box-padding);
 
 }
 .wrapper_header {
@@ -30,7 +30,7 @@
 
 .room_16to9_ratio_wrapper {
     width: 65%;
-    margin: 50px 0;
+    margin: var(--box-padding);
     .room_img {
         width: 100%;
         padding-top: 56.25%;
