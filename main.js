@@ -14,21 +14,27 @@ const mobileNavWidth = 1024;
 initProject();
 
 function initProject() {
-    // var widthRequestSlowedDown = $.debounce(300, () => {
-    //     this.setNavWidthDynamically(window.screen.width);
-    // })
-    // window.addEventListener("resize", widthRequestSlowedDown, false);
     
     currentFile = getCurrentFile();
     loadNavBar();
     loadFooter();
     if(currentFile === 'index.html') carouselBox3();
 
+    // init Width by checking device width and zoom level (zoom 100% === device width)
     setNavWidthDynamically(window.screen.width);
-    var widthRequestSlowedDown = _.debounce( () => {
+    setNavWidthDynamically(document.body.clientWidth);
+    
+    // screen width by device
+    var screenWidthRequestSlowedDown = _.debounce( () => {
         setNavWidthDynamically(window.screen.width);
-    }, 125)
-    window.addEventListener("resize", widthRequestSlowedDown, false);
+    }, 250);
+    window.addEventListener("resize", screenWidthRequestSlowedDown, false);
+
+    // screen width by zoom level
+    var clientWidthRequestSlowedDown = _.debounce( () => {
+        setNavWidthDynamically(document.body.clientWidth);
+    }, 250);
+    window.addEventListener("resize", clientWidthRequestSlowedDown, false);
 }
 
 function setNavWidthDynamically(width) {
