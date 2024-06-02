@@ -163,14 +163,15 @@ p {
             text-align: justify;
         }
         .wrapper_window_img {
-            margin: 25px 0;
+            margin: 50px 0;
             height: 300px;
-            width: 60%;
-            border-top-left-radius: 50%;
-            border-top-right-radius: 50%;
-            background-image: url("./assets/gallery/photo2.png");
-            background-position: center;
-            background-size: cover;
+            img {
+                width: 100%;
+                -webkit-mask-image: url("./assets/img/window_template.svg");
+                -webkit-mask-size: contain;
+                -webkit-mask-position: center;
+                -webkit-mask-repeat: no-repeat;
+            }
         }
     }
 }

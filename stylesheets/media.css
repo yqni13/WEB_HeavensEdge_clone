@@ -96,6 +96,10 @@
         }
     }
 
+    .gallery_box {
+        padding: 50px 0!important;
+    }
+    
     #footer_target {
         .wrapper_links {
             width: 50%!important;
@@ -147,10 +151,14 @@
             justify-content: center!important;
             order: 1!important;
             i {
-                width: 8vw!important;
-                height: 8vh!important;
+                width: 6vw!important;
+                height: 6vh!important;
             }
         }
+    }
+    
+    .gallery_box {
+        padding: 50px 0!important;
     }
 
     #footer_target {
@@ -219,6 +227,10 @@
                 height: 8vhimportant;
             }
         }
+    }
+
+    .gallery_box {
+        padding: 50px 0!important;
     }
 
     #footer_target {

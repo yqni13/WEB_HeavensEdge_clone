@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper_gallery_content {
-    margin: 0 150px;
+    margin: 0 10vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -48,7 +48,7 @@ body {
     position: fixed;
     z-index:200;
     background-color: rgba(0, 0, 0, 0.8);
-
+    align-content: center;
     .gallery_slider_menu_wrapper {
         width: 100%;
         display: flex;
@@ -95,9 +95,11 @@ body {
             width: 60%;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
         #gallery_slider_img_bg {
             width: 100%;
+            max-width: 100vh; /* responsive to landscape and portrait mode */
             aspect-ratio: 900 / 600;
             background-size: cover;
             background-position: center;
