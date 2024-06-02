@@ -53,6 +53,11 @@
     }
 
     .home {
+        .box1 {
+            &:before {
+                background-position-y: 0!important;
+            }
+        }
         .wrapper_box2 {
             width: 30%!important;
             margin: 0;
@@ -117,168 +122,7 @@
     }
 
     .home {
-        .wrapper_box2 {
-            width: auto!important;
-            margin: var(--margin-comptext);
-        }
-    }
-
-    .gallery {
-        .gallery_box {
-            padding: 50px 0!important;
-            
-        }
-    }
-    
-    #footer_target {
-        .wrapper_links {
-            width: 50%!important;
-        }
-        .contact {
-            width: 50%!important;
-            .contact_data {
-                width: 45%!important;
-            }
-            .contact_msg {
-                width: 55%!important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nav_bar {
-        height: var(--nav-size);
-        background-color: var(--nav-bg);
-        overflow: auto;
-        text-align: center!important;
-        ul {
-            width: var(--nav-width);
-            display: var(--nav-ul);
-            margin: 0 0 25vh 0!important;
-            order: 3!important;
-            li {
-                padding: 15px 0!important;
-            }
-            a {
-                color: var(--ul-text);
-                font-size: 3vw!important;
-            }
-        }
-        .logo {
-            width: var(--nav-width);
-            display: var(--nav-logo)!important;
-            filter: var(--logo-filter);
-            order: var(--logo-order)!important;
-            img {
-                margin-left: 0!important;
-                width: var(--logo-size)!important;
-                padding: var(--logo-padding)!important;
-            }
-        }
-        .burger-menu {
-            padding: var(--padding-burgermenu)!important;
-            width: var(--nav-width);
-            display: var(--nav-burgermenu);
-            margin-right: 0!important;
-            justify-content: center!important;
-            order: var(--burger-order)!important;
-            i {
-                width: 6vw!important;
-                height: 6vh!important;
-            }
-        }
-    }
-
-    .home {
-        .wrapper_box2 {
-            width: auto!important;
-            margin: var(--margin-comptext);
-        }
-    }
-    
-    .gallery {
-        .gallery_box {
-            padding: 50px 0!important;
-            
-        }
-    }
-
-    #footer_target {
-        .wrapper_footer {
-            padding: 50px 25px!important;
-        }
-        .wrapper_links {
-            order: 2!important;
-            flex-basis: fit-content;
-            flex-grow: 1;
-            padding-top: 50px;
-        }
-        .contact {
-            order: 1!important;
-            flex-basis: fit-content;
-            flex-grow: 1;
-            .contact_data {
-                margin: 0!important;
-                width: 45%!important;
-            }
-            .contact_msg {
-                width: 55%!important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .nav_bar {
-        height: var(--nav-size);
-        background-color: var(--nav-bg);
-        overflow: auto;
-        text-align: center!important;
-        ul {
-            width: var(--nav-width);
-            display: var(--nav-ul);
-            margin: 0 0 15vh 0!important;
-            order: 3!important;
-            li {
-                padding: 15px 0!important;
-            }
-            a {
-                color: var(--ul-text);
-                font-size: 5vw!important;
-            }
-        }
-        .logo {
-            width: var(--nav-width);
-            display: var(--nav-logo)!important;
-            filter: var(--logo-filter);
-            order: var(--logo-order)!important;
-            img {
-                margin-left: 0!important;
-                width: var(--logo-size)!important;
-                padding: var(--logo-padding)!important;
-            }
-        }
-        .burger-menu {
-            padding: var(--padding-burgermenu)!important;
-            width: var(--nav-width);
-            display: var(--nav-burgermenu);
-            margin-right: 0!important;
-            justify-content: center!important;
-            order: var(--burger-order)!important;
-            i {
-                width: 8vw!important;
-                height: 6vh!important;
-            }
-        }
-    }
-
-    .home {
-        .box1 {
-            &:before {
-                background-position-y: 0!important;
-            }
-        }
+        
         .wrapper_box2 {
             width: auto!important;
             margin: var(--margin-comptext);
@@ -293,6 +137,9 @@
             .wrapper_box3_text {
                 width: auto;
                 margin: 50px!important;
+            }
+            .wrapper_window_img {
+                height: auto!important;
             }
         }
         .box4 {
@@ -313,10 +160,9 @@
         }
         .box6 {
             .wrapper_box6_gallery {
-                display: inline-block!important;
                 .wrapper_box6_img {
-                    width: 100%!important;
-                    margin: 1px 0!important;
+                    width: calc((100vw / 2) - 2px)!important;
+                    margin: 1px!important;
                 }
             }
         }
@@ -331,7 +177,7 @@
                 }
             }
             .wrapper_about_box2_img {
-                width: 100vw!important;
+                width: 70vw!important; /** HERE! */
                 img {
                     height: auto!important; 
                     width: 100%!important; 
@@ -343,22 +189,11 @@
                     margin: var(--margin-comptext)!important;
                 }
             }
-        }
-        .about_box3 {
-            .wrapper_about_box3_content {
-                width: auto!important;
-                padding: 0 0 25px 0!important;
-                margin: 25px;
-                p {
-                    margin: var(--margin-comptext)!important;
-                    padding: 25px 0!important;
-                }
-            }
-        }
+        }        
         .about_box4 {
             margin: 50px 0!important;
             .wrapper_about_box4_img {
-                width: 100vw!important;
+                width: 70vw!important; /** HERE! */
                 img {
                     height: auto!important;
                     width: 100%!important;
@@ -375,7 +210,6 @@
         }
     }
 
-    
     .wrapper_header {
         padding: 25px 50px!important;
     }
@@ -405,10 +239,9 @@
         p { padding: 25px 0!important; }
     }
     #wrapper_gallery_img {
-        display: inline-block!important;
         .wrapper_gallery_single_img {
-            width: 100%!important;
-            margin: 1px 0!important;
+            width: calc((100vw / 2) - 2px)!important;
+            margin: 1px!important;
         }
     }
     .wrapper_room_navigation div {
@@ -425,7 +258,7 @@
             .wrapper_experience_content_img {
                 order: 1;
                 width: 100vw!important;
-                height: 50vh!important;
+                height: 90vh!important;
                 img {
                     &:nth-child(1) {
                         left: 0!important;
@@ -452,6 +285,144 @@
     .gallery {
         .gallery_box {
             padding: 50px 0!important;
+            
+        }
+    }
+    
+    #footer_target {
+        .contact {
+            .contact_data {
+                width: 45%!important;
+            }
+            .contact_msg {
+                width: 55%!important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_bar {
+        ul {
+            margin: 0 0 25vh 0!important;
+            a {
+                font-size: 3vw!important;
+            }
+        }
+        
+        .burger-menu {
+            i {
+                width: 6vw!important;
+                height: 6vh!important;
+            }
+        }
+    }
+
+    #wrapper_gallery_img {
+        display: inline-block!important;
+        .wrapper_gallery_single_img {
+            width: 100%!important;
+            margin: 1px 0!important;
+        }
+    }
+
+    .experience {
+        .wrapper_experience_content_img {
+            height: 75vh!important;
+        }
+    }
+    
+    .gallery {
+        .gallery_box {
+            padding: 50px 0!important;
+            
+        }
+    }
+
+    #footer_target {
+        .wrapper_footer {
+            padding: 50px 25px!important;
+        }
+        .wrapper_links {
+            order: 2!important;
+            flex-basis: fit-content;
+            flex-grow: 1;
+            padding-top: 50px;
+        }
+        .contact {
+            order: 1!important;
+            flex-basis: fit-content;
+            flex-grow: 1;
+            .contact_data {
+                margin: 0!important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav_bar {
+        text-align: center!important; */
+        ul {
+            margin: 0 0 15vh 0!important;
+            a {
+                font-size: 5vw!important;
+            }
+        }
+        .burger-menu {
+            i {
+                width: 8vw!important;
+                height: 6vh!important;
+            }
+        }
+    }
+
+    .home {
+        .box6 {
+            .wrapper_box6_gallery {
+                display: inline-block!important;
+                .wrapper_box6_img {
+                    width: 100%!important;
+                    margin: 1px 0!important;
+                }
+            }
+        }
+    }
+
+    .about {
+        .about_box2 {
+            .wrapper_about_box2_img {
+                width: 100vw!important;
+            }
+            
+        }
+        .about_box3 {
+            .wrapper_about_box3_content {
+                width: auto!important;
+                padding: 0 0 25px 0!important;
+                margin: 25px;
+                p {
+                    margin: var(--margin-comptext)!important;
+                    padding: 25px 0!important;
+                }
+            }
+        }
+        .about_box4 {
+            .wrapper_about_box4_img {
+                width: 100vw!important;
+            }
+        }
+    }
+
+    .experience {
+        .wrapper_experience_content_img {
+            height: 50vh!important;
+        }
+    }
+
+    .gallery {
+        .gallery_box {
+            padding: 50px 0!important;
         }
 
         #gallery_slider_box {
@@ -471,29 +442,5 @@
             }
         }
 
-    }
-
-    #footer_target {
-        .wrapper_footer {
-            padding: 50px 25px!important;
-        }
-        .wrapper_links {
-            order: 2!important;
-            flex-basis: fit-content;
-            flex-grow: 1;
-            padding-top: 50px;
-        }
-        .contact {
-            order: 1!important;
-            flex-basis: fit-content;
-            flex-grow: 1;
-            .contact_data {
-                margin: 0!important;
-                width: 45%!important;
-            }
-            .contact_msg {
-                width: 55%!important;
-            }
-        }
     }
 }
