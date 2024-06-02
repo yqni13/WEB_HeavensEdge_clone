@@ -19,6 +19,12 @@
             display: var(--nav-burgermenu);
         }
     }
+
+    .component_home {
+        .wrapper_box2 {
+            width: 40%!important;
+        }
+    }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -40,6 +46,13 @@
         .burger-menu {
             width: var(--nav-width);
             display: var(--nav-burgermenu);
+        }
+    }
+
+    .component_home {
+        .wrapper_box2 {
+            width: 30%!important;
+            margin: 0;
         }
     }
 
@@ -96,9 +109,17 @@
         }
     }
 
+    .component_home {
+        .wrapper_box2 {
+            width: auto!important;
+            margin: var(--margin-comptext);
+        }
+    }
+
     .gallery_box {
         padding: 50px 0!important;
     }
+    
     
     #footer_target {
         .wrapper_links {
@@ -154,6 +175,13 @@
                 width: 6vw!important;
                 height: 6vh!important;
             }
+        }
+    }
+
+    .component_home {
+        .wrapper_box2 {
+            width: auto!important;
+            margin: var(--margin-comptext);
         }
     }
     
@@ -225,6 +253,54 @@
             i {
                 width: 8vw!important;
                 height: 8vhimportant;
+            }
+        }
+    }
+
+    .component_home {
+        .box1 {
+            &:before {
+                background-position-y: 0!important;
+            }
+        }
+        .wrapper_box2 {
+            width: auto!important;
+            margin: var(--margin-comptext);
+        }
+        .box3 {
+            display: inline-block!important;
+            .wrapper_box3_img {
+                width: 100%!important;
+                margin: 0!important;
+                aspect-ratio: 900 / 600;
+            }
+            .wrapper_box3_text {
+                width: auto;
+                margin: 50px!important;
+            }
+        }
+        .box4 {
+            height: auto!important;
+            aspect-ratio: 900 / 600;
+        }
+        .box5_part {
+            display:inline-block;
+
+            .wrapper_box5_part2_text {
+                padding-bottom: 50px!important;
+            }
+
+            .box5_part2_text { width: 100%; }
+            .box5_part2_img { width: 100%; }
+            .box5_part3_img { width: 100%; }
+            .box5_part3_text { width: 100%; }
+        }
+        .box6 {
+            .wrapper_box6_gallery {
+                display: inline-block!important;
+                .wrapper_box6_img {
+                    width: calc(100% - 4px)!important;
+                }
             }
         }
     }
