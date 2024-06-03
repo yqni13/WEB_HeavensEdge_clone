@@ -211,7 +211,7 @@ p {
         border-bottom: solid var(--highlight-grey) 2px;
     }
     #box5_part1 {
-        width: 100%;
+        width: 50%;
     }
     #box5_part2,
     #box5_part3 {
