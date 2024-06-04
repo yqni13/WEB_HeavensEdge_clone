@@ -16,6 +16,11 @@ $\texttt{\color{teal}{v1.1.0}}$
 </div>
 <br>
 
+## MOTIVATION:
+
+To experiment with wallpapers, parallax effects, shaped images, sliders responsive design I decided to clone/redesign a webpage for the greek suite & villa <a href="https://www.heavensedge.gr" target="_blank">Heavens Edge</a>.
+<br><br>
+
 
 ## HOW TO:
 
@@ -33,7 +38,7 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
 
 ### 2. Image slideshow to change automatically or can be navigated by dots with timer reset
 <div>
-    <video src="./assets/videos/automatic_carousel.mp4"></video>
+    <img src="./assets/img/carousel.gif">
 </div>
 <br>
 
