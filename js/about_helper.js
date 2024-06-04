@@ -29,7 +29,7 @@ function carouselAboutBox3() {
 
     bgBox3.style.backgroundImage = "url(" + aboutBox3Gallery[galleryIndex] + ")";
     galleryIndex++;
-    setTimeout(carouselAboutBox3, 5000);
+    setTimeout(carouselAboutBox3, 3500);
 }
 
 function setBox4Img(index) {
@@ -59,5 +59,5 @@ function carouselAboutBox4() {
     img.src = aboutBox4Gallery[windowIndex];
     windowImg.append(img);
     windowIndex++;
-    timeoutIDBox4 = setTimeout(carouselAboutBox4, 5000);
+    timeoutIDBox4 = setTimeout(carouselAboutBox4, 3500);
 }

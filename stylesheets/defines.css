@@ -49,7 +49,7 @@
 [data-nav="navMobileCollapsed"] {
     --nav-logo: flex;
     --logo-filter: none;
-    --logo-size: 20vw;
+    --logo-size: 15vw;
     --logo-order: 1;
     --logo-padding: 5px 0 5px 20px;
     --burger-order: 2;
