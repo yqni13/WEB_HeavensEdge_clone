@@ -277,7 +277,7 @@
             .wrapper_experience_content_img {
                 order: 1;
                 width: 100vw!important;
-                height: 90vh;
+                height: 70vh;
                 img {
                     &:nth-child(1) {
                         left: 0!important;
@@ -286,9 +286,14 @@
                     }
                 }
             }
+            .experience_img_start {
+                img:nth-child(2) {
+                    right:70px!important;
+                }
+            }
             .experience_img_end {
                 img:nth-child(2) {
-                    left: 0!important;
+                    left: 70px!important;
                 }
             }
             .wrapper_experience_content_text {
@@ -355,6 +360,16 @@
             .wrapper_experience_content_img {
                 height: 75vh;
             }
+            .experience_img_start {
+                img:nth-child(2) {
+                    right:20px!important;
+                }
+            }
+            .experience_img_end {
+                img:nth-child(2) {
+                    left: 20px!important;
+                }
+            }
         }
     }
 
@@ -381,6 +396,11 @@
 
 @media screen and (max-width: 480px) {
     .nav_bar {
+        .logo {
+            img {
+                width: 20vw!important;
+            }
+        }
         text-align: center!important; */
         ul {
             margin: 0 0 15vh 0!important;

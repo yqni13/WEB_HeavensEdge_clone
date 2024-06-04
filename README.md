@@ -1,5 +1,5 @@
 # yqni13 clone (Heavens Edge)
-$\texttt{\color{teal}{v1.0.0}}$
+$\texttt{\color{teal}{v1.1.0}}$
 
 ## Screenshot navigation options
 
@@ -39,8 +39,8 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
 
 ### 3. responsive design $\textsf{\color{red}smartphone}$ | $\textsf{\color{lime}tablet}$ & manual image slideshow
 <div align="center">
-    <img height="500px" style="margin-right:15px;border-style:solid;border-color:red;border-width:1px" src="./assets/readme_img/responsive_smartphone_compare.jpg">
-    <img height="500px"style="border-style:solid;border-color:lime;border-width:1px" src="./assets/readme_img/responsive_tablet_compare.jpg">
+    <img height="400px" style="margin-right:15px;border-style:solid;border-color:red;border-width:1px" src="./assets/readme_img/responsive_smartphone_compare.jpg">
+    <img height="400px"style="border-style:solid;border-color:lime;border-width:1px" src="./assets/readme_img/responsive_tablet_compare.jpg">
 </div>
 <br>
 
@@ -51,6 +51,12 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
 <br>
 
 ## Updates
+
+### $\textsf{last\ update\ 1.0.0\ >>\ {\color{pink}1.1.0}}$
+
+- $\textsf{\color{orange}Change:}$ The double window-shaped pictures displayed at the experience component were shrunken to fit the resolution better.
+- $\textsf{\color{orange}Change:}$ The logo displayed inside the collapsed navigation bar for mobile devices were shrunken due to unfitting resolution.
+
 
 ### Aimed objectives for next $\textsf{\color{green}minor}$ update:
 <dl>
