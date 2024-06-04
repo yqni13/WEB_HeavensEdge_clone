@@ -1,18 +1,70 @@
-# travel-gallery
-first parallax effect webpage
+# yqni13 clone (Heavens Edge)
+$\texttt{\color{teal}{v1.0.0}}$
+
+## Screenshot navigation options
+
+<img src="./assets/readme_img/presentation_fullsize.jpg" alt="bottom home component">
+
+### Technology 
+
+<div style="display:flex; align-items:center;">
+    <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white">
+    <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white">
+    <img alt="Javascript" src="https://img.shields.io/badge/-JavaScript-F0DB4F?style=flat&logo=javascript&logoColor=white">
+    <img alt="Google Fonts" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F03%2FGoogle-Fonts-Logo.png&f=1&nofb=1&ipt=570b1eadbf10850285149faa90b47496e415ec5daf70efb973248c194025a6a5&ipo=images" style="height:auto; width:5%">Google Fonts
+    <img alt="Google Fonts" src="./assets/img/leaflet_logo.png" style="height:auto;padding:0 10px; width:10%">
+</div>
+<br>
 
 
 ## HOW TO:
 
-To enable all window-shaped images of components, you need to run project over http:// instead of file://. To display an image, cut by the form of an svg, the "mask-" properties are used which are protected by CORS. Therefore, displaying in the browser without running a server is not possible (throws error in console and element is invisible in browser). Run apache server (I do this by XAMPP), move project folder to reachable folder (for XAMPP it is "C:\xampp\htdocs"), start server and run "localhost/{foldername}/{filename}.html" for the url.
+The webpage uses a svg-file to shape displayed images. To do so, the "mask-" properties are necessary to use which is forbidden to use in a browser when loaded by "file://" instead of "http://" thanks to CORS. Therefore, this project needs to be run by server which I personally do by apache server thanks to <a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a>. To do this, copy project folder into xampp>htdocs, start xampp control panel, run apache server and navigate in browser to "localhost/foldername/index.html".
+<br><br>
 
 
 ## SPECIALTIES:
 
-- image carousel (control by dots; clearTimeout to reset settimeout)
-- image slideshow [automatic] (sliding controlled by settimeout)
-- image slideshow [manual] (customized slider shows up-scaled image from gallery and updates picture via previous/next buttons)
-- parallax effect with fixed full screen wallpapers
-- images shaped by form of svg
-- leaflet maps imported to display location of hotel when component is navigated to
-- Privacy-Policy and Terms of use contain dummy data created by https://termly.io/
+### 1. Images shaped by form of svg via mask- properties
+<div>
+    <img src="./assets/readme_img/img_inside_svg.jpg">
+</div>
+<br>
+
+### 2. Image slideshow to change automatically or can be navigated by dots with timer reset
+<div>
+    <video src="./assets/videos/automatic_carousel.mp4"></video>
+</div>
+<br>
+
+### 3. responsive design $\textsf{\color{red}smartphone}$ | $\textsf{\color{lime}tablet}$ & manual image slideshow
+<div align="center">
+    <img height="500px" style="margin-right:15px;border-style:solid;border-color:red;border-width:1px" src="./assets/readme_img/responsive_smartphone_compare.jpg">
+    <img height="500px"style="border-style:solid;border-color:lime;border-width:1px" src="./assets/readme_img/responsive_tablet_compare.jpg">
+</div>
+<br>
+
+### 4. Leaflet maps imported to display location of hotel
+<div align="center">
+    <img height="500px" src="./assets/readme_img/leaflet_location.jpg" alt="leaflet map location component">
+</div>
+<br>
+
+## Updates
+
+### Aimed objectives for next $\textsf{\color{green}minor}$ update:
+<dl>
+    <dd>- scroll hint animation</dd>
+    <dd>- error handling for images failing to load</dd>
+    <dd>- form submit logic</dd>
+    <dd>- additional full page resolution option in gallery slider</dd>
+</dl>
+<br>
+
+### Aimed objectives for next $\textsf{\color{cyan}major}$ update:
+<dl>
+    <dd>- additional component [newsletter]</dd>
+    <dd>- additional component [reviews]</dd>
+    <dd>- parallax effect</dd>
+    <dd>- responsive design > 1440px width</dd>
+</dl>
