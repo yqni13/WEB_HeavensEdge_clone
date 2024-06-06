@@ -76,6 +76,7 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
     <dd>- error handling for images failing to load</dd>
     <dd>- form submit logic</dd>
     <dd>- additional full page resolution option in gallery slider</dd>
+    <dd>- control gallery slider with keys (exit, previous, next)</dd>
 </dl>
 
 ### Aimed objectives for next $\textsf{\color{cyan}major}$ update:
