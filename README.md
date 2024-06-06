@@ -16,9 +16,9 @@ $\texttt{\color{teal}{v1.1.1}}$
 </div>
 
 <br>
-Official <a href="https://semver.org/">Semantic Versioning Specifications (SemVer)</a> applied to project versioning.
+Official <a href="https://semver.org/" target="_blank">Semantic Versioning Specifications (SemVer)</a> applied to project versioning.
 
-### <a href="https://yqni13.github.io/WEB_HeavensEdge_clone/index.html">TRY LIVE DEMO</a>
+### <a href="https://yqni13.github.io/WEB_HeavensEdge_clone/index.html" target="_blank">TRY LIVE DEMO</a>
 
 <br>
 
@@ -63,7 +63,7 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
 
 ## Updates
 
-[list of all updates](update_protocol.md)
+[list of all updates](docs/update_protocol.md)
 ### $\textsf{{\color{pink}{last}} update\ 1.1.0\ >>\ {\color{pink}1.1.1}}$
 
 - $\textsf{\color{red}Bugfix:}$ In desktop-mode (width > 1024px), the "x" to close the gallery slider will change opacity while being hovered. [Before: The "x" button did not change the opacity while being hovered.]
