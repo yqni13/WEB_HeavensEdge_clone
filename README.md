@@ -1,5 +1,5 @@
 # yqni13 clone (Heavens Edge)
-$\texttt{\color{teal}{v1.1.0}}$
+$\texttt{\color{teal}{v1.1.1}}$
 
 ## Screenshot navigation options
 
@@ -14,11 +14,17 @@ $\texttt{\color{teal}{v1.1.0}}$
     <img alt="Google Fonts" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F03%2FGoogle-Fonts-Logo.png&f=1&nofb=1&ipt=570b1eadbf10850285149faa90b47496e415ec5daf70efb973248c194025a6a5&ipo=images" style="height:auto; width:5%">Google Fonts
     <img alt="Google Fonts" src="./assets/img/leaflet_logo.png" style="height:auto;padding:0 10px; width:10%">
 </div>
+
+<br>
+Official <a href="https://semver.org/">Semantic Versioning Specifications (SemVer)</a> applied to project versioning.
+
+### <a href="https://yqni13.github.io/WEB_HeavensEdge_clone/index.html">TRY LIVE DEMO</a>
+
 <br>
 
 ## MOTIVATION:
 
-To experiment with wallpapers, parallax effects, shaped images, sliders responsive design I decided to clone/redesign a webpage for the greek suite & villa <a href="https://www.heavensedge.gr" target="_blank">Heavens Edge</a>.
+To experiment with wallpapers, parallax effects, shaped images, sliders responsive design I decided to clone/redesign a webpage for the greek suite & villa <a href="https://www.heavensedge.gr" target="_blank">Heavens Edge</a> (original).
 <br><br>
 
 
@@ -57,11 +63,12 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
 
 ## Updates
 
-### $\textsf{last\ update\ 1.0.0\ >>\ {\color{pink}1.1.0}}$
+[list of all updates](update_protocol.md)
+### $\textsf{{\color{pink}{last}} update\ 1.1.0\ >>\ {\color{pink}1.1.1}}$
 
-- $\textsf{\color{orange}Change:}$ The double window-shaped pictures displayed at the experience component were shrunken to fit the resolution better.
-- $\textsf{\color{orange}Change:}$ The logo displayed inside the collapsed navigation bar for mobile devices were shrunken due to unfitting resolution.
+- $\textsf{\color{red}Bugfix:}$ In desktop-mode (width > 1024px), the "x" to close the gallery slider will change opacity while being hovered. [Before: The "x" button did not change the opacity while being hovered.]
 
+<br>
 
 ### Aimed objectives for next $\textsf{\color{green}minor}$ update:
 <dl>
@@ -70,7 +77,6 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
     <dd>- form submit logic</dd>
     <dd>- additional full page resolution option in gallery slider</dd>
 </dl>
-<br>
 
 ### Aimed objectives for next $\textsf{\color{cyan}major}$ update:
 <dl>
