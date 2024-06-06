@@ -4,7 +4,7 @@
 
 <br>
 
-### 2024/6/6 - $\textsf{{\color{pink}{last}} update\ 1.1.0\ >>\ {\color{pink}1.1.1}}$
+### 2024/6/6 - $\textsf{update\ 1.1.0\ >>\ {\color{pink}1.1.1}}$
 
 - $\textsf{\color{red}Bugfix:}$ In desktop-mode (width > 1024px), the "x" to close the gallery slider will change opacity while being hovered. [Before: The "x" button did not change the opacity while being hovered.]
 
