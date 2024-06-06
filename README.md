@@ -16,21 +16,21 @@ $\texttt{\color{teal}{v1.1.1}}$
 </div>
 
 <br>
-Official <a href="https://semver.org/" target="_blank">Semantic Versioning Specifications (SemVer)</a> applied to project versioning.
+Official <a href="https://semver.org/">Semantic Versioning Specifications (SemVer)</a> applied to project versioning.
 
-### <a href="https://yqni13.github.io/WEB_HeavensEdge_clone/index.html" target="_blank">TRY LIVE DEMO</a>
+### <a href="https://yqni13.github.io/WEB_HeavensEdge_clone/index.html">TRY LIVE DEMO</a>
 
 <br>
 
 ## MOTIVATION:
 
-To experiment with wallpapers, parallax effects, shaped images, sliders responsive design I decided to clone/redesign a webpage for the greek suite & villa <a href="https://www.heavensedge.gr" target="_blank">Heavens Edge</a> (original).
+To experiment with wallpapers, parallax effects, shaped images, sliders responsive design I decided to clone/redesign a webpage for the greek suite & villa <a href="https://heavensedge.gr">Heavens Edge</a> (original).
 <br><br>
 
 
 ## HOW TO:
 
-The webpage uses a svg-file to shape displayed images. To do so, the "mask-" properties are necessary to use which is forbidden to use in a browser when loaded by "file://" instead of "http://" thanks to CORS. Therefore, this project needs to be run by server which I personally do by apache server thanks to <a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a>. To do this, copy project folder into xampp>htdocs, start xampp control panel, run apache server and navigate in browser to "localhost/foldername/index.html".
+The webpage uses a svg-file to shape displayed images. To do so, the "mask-" properties are necessary to use which is forbidden to use in a browser when loaded by "file://" instead of "http://" thanks to CORS. Therefore, this project needs to be run by server which I personally do by apache server thanks to <a href="https://www.apachefriends.org/index.html">XAMPP</a>. To do this, copy project folder into xampp>htdocs, start xampp control panel, run apache server and navigate in browser to "localhost/foldername/index.html".
 <br><br>
 
 
