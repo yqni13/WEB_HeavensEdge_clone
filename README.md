@@ -1,5 +1,5 @@
 # yqni13 clone (Heavens Edge)
-$\texttt{\color{teal}{v1.1.1}}$
+$\texttt{\color{teal}{v1.1.2}}$
 
 ## Screenshot navigation options
 
@@ -12,7 +12,7 @@ $\texttt{\color{teal}{v1.1.1}}$
     <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white">
     <img alt="Javascript" src="https://img.shields.io/badge/-JavaScript-F0DB4F?style=flat&logo=javascript&logoColor=white">
     <img alt="Google Fonts" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F03%2FGoogle-Fonts-Logo.png&f=1&nofb=1&ipt=570b1eadbf10850285149faa90b47496e415ec5daf70efb973248c194025a6a5&ipo=images" style="height:auto; width:5%">Google Fonts
-    <img alt="Google Fonts" src="./assets/img/leaflet_logo.png" style="height:auto;padding:0 10px; width:10%">
+    <img alt="Leaflet" src="./assets/img/leaflet_logo.png" style="height:auto;padding:0 10px; width:10%">
 </div>
 
 <br>
@@ -64,9 +64,9 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
 ## Updates
 
 [list of all updates](docs/update_protocol.md)
-### $\textsf{{\color{pink}{last}} update\ 1.1.0\ >>\ {\color{pink}1.1.1}}$
+### $\textsf{{\color{pink}{last}} update\ 1.1.1\ >>\ {\color{pink}1.1.2}}$
 
-- $\textsf{\color{red}Bugfix:}$ In desktop-mode (width > 1024px), the "x" to close the gallery slider will change opacity while being hovered. [Before: The "x" button did not change the opacity while being hovered.]
+- $\textsf{\color{red}Bugfix:}$ Map for component 'location' shows satelite picture. [Before: Due to missing api key the map wasn't displayed and error 401 occured.]
 
 <br>
 
