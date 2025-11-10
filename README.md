@@ -86,3 +86,128 @@ The webpage uses a svg-file to shape displayed images. To do so, the "mask-" pro
     <dd>- parallax effect</dd>
     <dd>- responsive design > 1440px width</dd>
 </dl>
+
+<br>
+
+## NOTES
+
+### possible GitHub markdown colors (from LaTeX):
+
+<br>
+
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{apricot} APRICOT}$
+$\textsf{\color{aquamarine} AQUAMARINE}$
+$\textsf{\color{bittersweet} BITTERSWEET}$
+$\textsf{\color{black} BLACK}$
+$\textsf{\color{blue} BLUE}$
+$\textsf{\color{bluegreen} BLUEGREEN}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{blueviolet} BLUEVIOLET}$
+$\textsf{\color{brickred} BRICKRED}$
+$\textsf{\color{brown} BROWN}$
+$\textsf{\color{burntorange} BURNTORANGE}$
+$\textsf{\color{cadetblue} CADETBLUE}$
+$\textsf{\color{carnationpink} CARNATIONPINK}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{cerulean} CERULEAN}$
+$\textsf{\color{cornflowerblue} CORNFLOWERBLUE}$
+$\textsf{\color{cyan} CYAN}$
+$\textsf{\color{dandelion} DANDELION}$
+$\textsf{\color{darkorchid} DARKORCHID}$
+$\textsf{\color{emerald} EMERALD}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{forestgreen} FORESTGREEN}$
+$\textsf{\color{fuchsia} FUCHSIA}$
+$\textsf{\color{goldenrod} GOLDENROD}$
+$\textsf{\color{gray} GRAY}$
+$\textsf{\color{green} GREEN}$
+$\textsf{\color{greenyellow} GREENYELLOW}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{junglegreen} JUNGLEGREEN}$
+$\textsf{\color{lavender} LAVENDER}$
+$\textsf{\color{limegreen} LIMEGREEN}$
+$\textsf{\color{magenta} MAGENTA}$
+$\textsf{\color{mahogany} MAHOGANY}$
+$\textsf{\color{maroon} MAROON}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{melon} MELON}$
+$\textsf{\color{midnightblue} MIDNIGHTBLUE}$
+$\textsf{\color{mulberry} MULBERRY}$
+$\textsf{\color{navyblue} NAVYBLUE}$
+$\textsf{\color{olivegreen} OLIVEGREEN}$
+$\textsf{\color{orange} ORANGE}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{orangered} ORANGERED}$
+$\textsf{\color{orchid} ORCHID}$
+$\textsf{\color{peach} PEACH}$
+$\textsf{\color{periwinkle} PERIWINKLE}$
+$\textsf{\color{pinegreen} PINEGREEN}$
+$\textsf{\color{plum} PLUM}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{processblue} PROCESSBLUE}$
+$\textsf{\color{purple} PURPLE}$
+$\textsf{\color{rawsienna} RAWSIENNA}$
+$\textsf{\color{red} RED}$
+$\textsf{\color{redorange} REDORANGE}$
+$\textsf{\color{redviolet} REDVIOLET}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{rhodamine} RHODAMINE}$
+$\textsf{\color{royalblue} ROYALBLUE}$
+$\textsf{\color{royalpurple} ROYALPURPLE}$
+$\textsf{\color{rubinered} RUBINERED}$
+$\textsf{\color{salmon} SALMON}$
+$\textsf{\color{seagreen} SEAGREEN}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{sepia} SEPIA}$
+$\textsf{\color{skyblue} SKYBLUE}$
+$\textsf{\color{springgreen} SPRINGGREEN}$
+$\textsf{\color{tan} TAN}$
+$\textsf{\color{tealblue} TEALBLUE}$
+$\textsf{\color{thistle} THISTLE}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{turquoise} TURQUOISE}$
+$\textsf{\color{violet} VIOLET}$
+$\textsf{\color{violetred} VIOLETRED}$
+$\textsf{\color{white} WHITE}$
+$\textsf{\color{wildstrawberry} WILDSTRAWBERRY}$
+$\textsf{\color{yellow} YELLOW}$
+
+</div>
+<div style="display:flex; align-items:center;">
+
+$\textsf{\color{yellowgreen} YELLOWGREEN}$
+$\textsf{\color{yelloworange} YELLOWORANGE}$
+
+</div>
